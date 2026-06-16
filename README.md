@@ -45,4 +45,4 @@ python scripts/iceberg_to_s3.py all                       # register every layou
 source iceberg_rest/env.rest
 python scripts/run_queries.py --iters 3 --sels hour,day,week
 ```
-### The analysis `evaluation.ipynb`
+### 4. The analysis `evaluation.ipynb`
