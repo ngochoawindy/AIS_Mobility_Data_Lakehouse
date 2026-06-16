@@ -1,0 +1,800 @@
+[
+  {
+    "layout": "L0",
+    "gran": "monthly",
+    "query": "spatial",
+    "total_files": 31,
+    "files_read": 31,
+    "files_pruned": 0,
+    "files_pct": 100.0,
+    "bytes_read_mb": 3573.237721,
+    "total_bytes_mb": 3573.237721,
+    "total_rg": 682,
+    "median_s": 6.248508500000753,
+    "min_s": 6.077198915998451,
+    "times_s": [
+      7.028956249996554,
+      6.248508500000753,
+      6.077198915998451
+    ]
+  },
+  {
+    "layout": "L0",
+    "gran": "monthly",
+    "query": "temporal",
+    "total_files": 31,
+    "files_read": 1,
+    "files_pruned": 30,
+    "files_pct": 3.225806451612903,
+    "bytes_read_mb": 119.92656,
+    "total_bytes_mb": 3573.237721,
+    "total_rg": 22,
+    "median_s": 0.0026577919998089783,
+    "min_s": 0.0023060000021359883,
+    "times_s": [
+      0.0049338329990860075,
+      0.0026577919998089783,
+      0.0023060000021359883
+    ]
+  },
+  {
+    "layout": "L0",
+    "gran": "monthly",
+    "query": "st_q57",
+    "total_files": 31,
+    "files_read": 31,
+    "files_pruned": 0,
+    "files_pct": 100.0,
+    "bytes_read_mb": 3573.237721,
+    "total_bytes_mb": 3573.237721,
+    "total_rg": 682,
+    "median_s": 12.483212708000792,
+    "min_s": 12.404712416006078,
+    "times_s": [
+      12.404712416006078,
+      12.483212708000792,
+      12.696962249996432
+    ]
+  },
+  {
+    "layout": "L1",
+    "gran": "monthly",
+    "query": "spatial",
+    "total_files": 16,
+    "files_read": 16,
+    "files_pruned": 0,
+    "files_pct": 100.0,
+    "bytes_read_mb": 3568.697788,
+    "total_bytes_mb": 3568.697788,
+    "total_rg": 368,
+    "median_s": 6.326624875000562,
+    "min_s": 6.289213832998939,
+    "times_s": [
+      6.663570999997319,
+      6.326624875000562,
+      6.289213832998939
+    ]
+  },
+  {
+    "layout": "L1",
+    "gran": "monthly",
+    "query": "temporal",
+    "total_files": 16,
+    "files_read": 16,
+    "files_pruned": 0,
+    "files_pct": 100.0,
+    "bytes_read_mb": 3568.697788,
+    "total_bytes_mb": 3568.697788,
+    "total_rg": 368,
+    "median_s": 0.003663959003461059,
+    "min_s": 0.0035653750019264407,
+    "times_s": [
+      0.004981958998541813,
+      0.0035653750019264407,
+      0.003663959003461059
+    ]
+  },
+  {
+    "layout": "L1",
+    "gran": "monthly",
+    "query": "st_q57",
+    "total_files": 16,
+    "files_read": 16,
+    "files_pruned": 0,
+    "files_pct": 100.0,
+    "bytes_read_mb": 3568.697788,
+    "total_bytes_mb": 3568.697788,
+    "total_rg": 368,
+    "median_s": 12.638431874998787,
+    "min_s": 12.63156162499945,
+    "times_s": [
+      12.63156162499945,
+      12.648087499997928,
+      12.638431874998787
+    ]
+  },
+  {
+    "layout": "L2",
+    "gran": "monthly",
+    "query": "spatial",
+    "total_files": 119,
+    "files_read": 1,
+    "files_pruned": 118,
+    "files_pct": 0.8403361344537815,
+    "bytes_read_mb": 334.218109,
+    "total_bytes_mb": 3950.045525,
+    "total_rg": 132,
+    "median_s": 0.19125008300034096,
+    "min_s": 0.19094383300398476,
+    "times_s": [
+      0.29269550000026356,
+      0.19125008300034096,
+      0.19094383300398476
+    ]
+  },
+  {
+    "layout": "L2",
+    "gran": "monthly",
+    "query": "temporal",
+    "total_files": 119,
+    "files_read": 119,
+    "files_pruned": 0,
+    "files_pct": 100.0,
+    "bytes_read_mb": 3950.045525,
+    "total_bytes_mb": 3950.045525,
+    "total_rg": 3498,
+    "median_s": 0.02464483400399331,
+    "min_s": 0.02463920800073538,
+    "times_s": [
+      0.035876542002370115,
+      0.02464483400399331,
+      0.02463920800073538
+    ]
+  },
+  {
+    "layout": "L2",
+    "gran": "monthly",
+    "query": "st_q57",
+    "total_files": 119,
+    "files_read": 1,
+    "files_pruned": 118,
+    "files_pct": 0.8403361344537815,
+    "bytes_read_mb": 334.218109,
+    "total_bytes_mb": 3950.045525,
+    "total_rg": 132,
+    "median_s": 1.3448472079981002,
+    "min_s": 1.322621583,
+    "times_s": [
+      1.322621583,
+      1.3464113750014803,
+      1.3448472079981002
+    ]
+  },
+  {
+    "layout": "L3",
+    "gran": "monthly",
+    "query": "spatial",
+    "total_files": 299,
+    "files_read": 1,
+    "files_pruned": 298,
+    "files_pct": 0.33444816053511706,
+    "bytes_read_mb": 81.460372,
+    "total_bytes_mb": 4169.277135,
+    "total_rg": 22,
+    "median_s": 0.1950249170040479,
+    "min_s": 0.19462012499570847,
+    "times_s": [
+      0.22624616700340994,
+      0.1950249170040479,
+      0.19462012499570847
+    ]
+  },
+  {
+    "layout": "L3",
+    "gran": "monthly",
+    "query": "temporal",
+    "total_files": 299,
+    "files_read": 299,
+    "files_pruned": 0,
+    "files_pct": 100.0,
+    "bytes_read_mb": 4169.277135,
+    "total_bytes_mb": 4169.277135,
+    "total_rg": 7304,
+    "median_s": 0.04925091600307496,
+    "min_s": 0.04879429200082086,
+    "times_s": [
+      0.06351020900183357,
+      0.04879429200082086,
+      0.04925091600307496
+    ]
+  },
+  {
+    "layout": "L3",
+    "gran": "monthly",
+    "query": "st_q57",
+    "total_files": 299,
+    "files_read": 4,
+    "files_pruned": 295,
+    "files_pct": 1.3377926421404682,
+    "bytes_read_mb": 354.154111,
+    "total_bytes_mb": 4169.277135,
+    "total_rg": 176,
+    "median_s": 1.2176059580015135,
+    "min_s": 1.210412542000995,
+    "times_s": [
+      1.210412542000995,
+      1.2229836249971413,
+      1.2176059580015135
+    ]
+  },
+  {
+    "layout": "L4",
+    "gran": "monthly",
+    "query": "spatial",
+    "total_files": 24,
+    "files_read": 24,
+    "files_pruned": 0,
+    "files_pct": 100.0,
+    "bytes_read_mb": 3396.918772,
+    "total_bytes_mb": 3396.918772,
+    "total_rg": 504,
+    "median_s": 2.483430291998957,
+    "min_s": 2.479941958001291,
+    "times_s": [
+      2.8772523750012624,
+      2.483430291998957,
+      2.479941958001291
+    ]
+  },
+  {
+    "layout": "L4",
+    "gran": "monthly",
+    "query": "temporal",
+    "total_files": 24,
+    "files_read": 2,
+    "files_pruned": 22,
+    "files_pct": 8.333333333333334,
+    "bytes_read_mb": 237.401525,
+    "total_bytes_mb": 3396.918772,
+    "total_rg": 42,
+    "median_s": 0.004573833000904415,
+    "min_s": 0.004538541004876606,
+    "times_s": [
+      0.006358208003803156,
+      0.004573833000904415,
+      0.004538541004876606
+    ]
+  },
+  {
+    "layout": "L4",
+    "gran": "monthly",
+    "query": "st_q57",
+    "total_files": 24,
+    "files_read": 24,
+    "files_pruned": 0,
+    "files_pct": 100.0,
+    "bytes_read_mb": 3396.918772,
+    "total_bytes_mb": 3396.918772,
+    "total_rg": 504,
+    "median_s": 3.920942290998937,
+    "min_s": 3.9009076250004,
+    "times_s": [
+      3.946005124998919,
+      3.920942290998937,
+      3.9009076250004
+    ]
+  },
+  {
+    "layout": "L0",
+    "gran": "daily",
+    "query": "spatial",
+    "total_files": 31,
+    "files_read": 31,
+    "files_pruned": 0,
+    "files_pct": 100.0,
+    "bytes_read_mb": 3573.237721,
+    "total_bytes_mb": 3573.237721,
+    "total_rg": 682,
+    "median_s": 6.213711875003355,
+    "min_s": 6.100133874999301,
+    "times_s": [
+      6.662733333003416,
+      6.100133874999301,
+      6.213711875003355
+    ]
+  },
+  {
+    "layout": "L0",
+    "gran": "daily",
+    "query": "temporal",
+    "total_files": 31,
+    "files_read": 1,
+    "files_pruned": 30,
+    "files_pct": 3.225806451612903,
+    "bytes_read_mb": 119.92656,
+    "total_bytes_mb": 3573.237721,
+    "total_rg": 22,
+    "median_s": 0.002238792003481649,
+    "min_s": 0.0022255420044530183,
+    "times_s": [
+      0.002813082995999139,
+      0.0022255420044530183,
+      0.002238792003481649
+    ]
+  },
+  {
+    "layout": "L0",
+    "gran": "daily",
+    "query": "st_q57",
+    "total_files": 31,
+    "files_read": 31,
+    "files_pruned": 0,
+    "files_pct": 100.0,
+    "bytes_read_mb": 3573.237721,
+    "total_bytes_mb": 3573.237721,
+    "total_rg": 682,
+    "median_s": 12.596387666999362,
+    "min_s": 12.435411541999201,
+    "times_s": [
+      12.435411541999201,
+      12.596387666999362,
+      12.603436749996035
+    ]
+  },
+  {
+    "layout": "L1",
+    "gran": "daily",
+    "query": "spatial",
+    "total_files": 496,
+    "files_read": 496,
+    "files_pruned": 0,
+    "files_pct": 100.0,
+    "bytes_read_mb": 3573.954204,
+    "total_bytes_mb": 3573.954204,
+    "total_rg": 10912,
+    "median_s": 6.228762249993451,
+    "min_s": 6.15068429200619,
+    "times_s": [
+      6.500456166999356,
+      6.15068429200619,
+      6.228762249993451
+    ]
+  },
+  {
+    "layout": "L1",
+    "gran": "daily",
+    "query": "temporal",
+    "total_files": 496,
+    "files_read": 496,
+    "files_pruned": 0,
+    "files_pct": 100.0,
+    "bytes_read_mb": 3573.954204,
+    "total_bytes_mb": 3573.954204,
+    "total_rg": 10912,
+    "median_s": 0.03813737499876879,
+    "min_s": 0.03750733299966669,
+    "times_s": [
+      0.03928187500423519,
+      0.03750733299966669,
+      0.03813737499876879
+    ]
+  },
+  {
+    "layout": "L1",
+    "gran": "daily",
+    "query": "st_q57",
+    "total_files": 496,
+    "files_read": 496,
+    "files_pruned": 0,
+    "files_pct": 100.0,
+    "bytes_read_mb": 3573.954204,
+    "total_bytes_mb": 3573.954204,
+    "total_rg": 10912,
+    "median_s": 12.418864832994586,
+    "min_s": 12.354571374999068,
+    "times_s": [
+      12.354571374999068,
+      12.423764333005238,
+      12.418864832994586
+    ]
+  },
+  {
+    "layout": "L2",
+    "gran": "daily",
+    "query": "spatial",
+    "total_files": 1439,
+    "files_read": 31,
+    "files_pruned": 1408,
+    "files_pct": 2.1542738012508686,
+    "bytes_read_mb": 334.552949,
+    "total_bytes_mb": 3994.354512,
+    "total_rg": 589,
+    "median_s": 0.2241644159948919,
+    "min_s": 0.22048937500221655,
+    "times_s": [
+      0.30771720800112234,
+      0.22048937500221655,
+      0.2241644159948919
+    ]
+  },
+  {
+    "layout": "L2",
+    "gran": "daily",
+    "query": "temporal",
+    "total_files": 1439,
+    "files_read": 1439,
+    "files_pruned": 0,
+    "files_pct": 100.0,
+    "bytes_read_mb": 3994.354512,
+    "total_bytes_mb": 3994.354512,
+    "total_rg": 27341,
+    "median_s": 0.12523645799956284,
+    "min_s": 0.12247133400524035,
+    "times_s": [
+      0.12247133400524035,
+      0.12523645799956284,
+      0.12919045900343917
+    ]
+  },
+  {
+    "layout": "L2",
+    "gran": "daily",
+    "query": "st_q57",
+    "total_files": 1439,
+    "files_read": 31,
+    "files_pruned": 1408,
+    "files_pct": 2.1542738012508686,
+    "bytes_read_mb": 334.552949,
+    "total_bytes_mb": 3994.354512,
+    "total_rg": 589,
+    "median_s": 1.3611938750036643,
+    "min_s": 1.3596891249981127,
+    "times_s": [
+      1.3611938750036643,
+      1.3596891249981127,
+      1.3710614999945392
+    ]
+  },
+  {
+    "layout": "L3",
+    "gran": "daily",
+    "query": "spatial",
+    "total_files": 4133,
+    "files_read": 31,
+    "files_pruned": 4102,
+    "files_pct": 0.7500604887490927,
+    "bytes_read_mb": 81.752817,
+    "total_bytes_mb": 4200.358183,
+    "total_rg": 589,
+    "median_s": 0.4004125420033233,
+    "min_s": 0.3995794590009609,
+    "times_s": [
+      0.4396520000009332,
+      0.3995794590009609,
+      0.4004125420033233
+    ]
+  },
+  {
+    "layout": "L3",
+    "gran": "daily",
+    "query": "temporal",
+    "total_files": 4133,
+    "files_read": 4133,
+    "files_pruned": 0,
+    "files_pct": 100.0,
+    "bytes_read_mb": 4200.358183,
+    "total_bytes_mb": 4200.358183,
+    "total_rg": 78527,
+    "median_s": 0.36098841700004414,
+    "min_s": 0.3498577920036041,
+    "times_s": [
+      0.3498577920036041,
+      0.3789620419993298,
+      0.36098841700004414
+    ]
+  },
+  {
+    "layout": "L3",
+    "gran": "daily",
+    "query": "st_q57",
+    "total_files": 4133,
+    "files_read": 124,
+    "files_pruned": 4009,
+    "files_pct": 3.000241954996371,
+    "bytes_read_mb": 354.878163,
+    "total_bytes_mb": 4200.358183,
+    "total_rg": 2356,
+    "median_s": 1.4569510419969447,
+    "min_s": 1.4485851249992265,
+    "times_s": [
+      1.4569510419969447,
+      1.4485851249992265,
+      1.4605394169993815
+    ]
+  },
+  {
+    "layout": "L4",
+    "gran": "daily",
+    "query": "spatial",
+    "total_files": 744,
+    "files_read": 744,
+    "files_pruned": 0,
+    "files_pct": 100.0,
+    "bytes_read_mb": 3405.631042,
+    "total_bytes_mb": 3405.631042,
+    "total_rg": 14136,
+    "median_s": 1.195080749996123,
+    "min_s": 1.1829979999965872,
+    "times_s": [
+      1.4854586250003194,
+      1.195080749996123,
+      1.1829979999965872
+    ]
+  },
+  {
+    "layout": "L4",
+    "gran": "daily",
+    "query": "temporal",
+    "total_files": 744,
+    "files_read": 62,
+    "files_pruned": 682,
+    "files_pct": 8.333333333333334,
+    "bytes_read_mb": 238.173896,
+    "total_bytes_mb": 3405.631042,
+    "total_rg": 1178,
+    "median_s": 0.05846070800180314,
+    "min_s": 0.055581499997060746,
+    "times_s": [
+      0.05846070800180314,
+      0.0593197499983944,
+      0.055581499997060746
+    ]
+  },
+  {
+    "layout": "L4",
+    "gran": "daily",
+    "query": "st_q57",
+    "total_files": 744,
+    "files_read": 744,
+    "files_pruned": 0,
+    "files_pct": 100.0,
+    "bytes_read_mb": 3405.631042,
+    "total_bytes_mb": 3405.631042,
+    "total_rg": 14136,
+    "median_s": 2.6226299999980256,
+    "min_s": 2.6136288339985185,
+    "times_s": [
+      2.6136288339985185,
+      2.6226299999980256,
+      2.641548750005313
+    ]
+  },
+  {
+    "layout": "L1",
+    "gran": "compact",
+    "query": "spatial",
+    "total_files": 16,
+    "files_read": 16,
+    "files_pruned": 0,
+    "files_pct": 100.0,
+    "bytes_read_mb": 3568.697788,
+    "total_bytes_mb": 3568.697788,
+    "total_rg": 368,
+    "median_s": 6.30315137499565,
+    "min_s": 6.264569541999663,
+    "times_s": [
+      7.003782959000091,
+      6.264569541999663,
+      6.30315137499565
+    ]
+  },
+  {
+    "layout": "L1",
+    "gran": "compact",
+    "query": "temporal",
+    "total_files": 16,
+    "files_read": 16,
+    "files_pruned": 0,
+    "files_pct": 100.0,
+    "bytes_read_mb": 3568.697788,
+    "total_bytes_mb": 3568.697788,
+    "total_rg": 368,
+    "median_s": 0.0037321249983506277,
+    "min_s": 0.0036522500013234094,
+    "times_s": [
+      0.0067993749980814755,
+      0.0037321249983506277,
+      0.0036522500013234094
+    ]
+  },
+  {
+    "layout": "L1",
+    "gran": "compact",
+    "query": "st_q57",
+    "total_files": 16,
+    "files_read": 16,
+    "files_pruned": 0,
+    "files_pct": 100.0,
+    "bytes_read_mb": 3568.697788,
+    "total_bytes_mb": 3568.697788,
+    "total_rg": 368,
+    "median_s": 12.541959667003539,
+    "min_s": 12.49604891600029,
+    "times_s": [
+      12.567293708001671,
+      12.49604891600029,
+      12.541959667003539
+    ]
+  },
+  {
+    "layout": "L2",
+    "gran": "compact",
+    "query": "spatial",
+    "total_files": 119,
+    "files_read": 1,
+    "files_pruned": 118,
+    "files_pct": 0.8403361344537815,
+    "bytes_read_mb": 334.218109,
+    "total_bytes_mb": 3950.045525,
+    "total_rg": 132,
+    "median_s": 0.19799829200201202,
+    "min_s": 0.19666295799834188,
+    "times_s": [
+      0.3070074159986689,
+      0.19666295799834188,
+      0.19799829200201202
+    ]
+  },
+  {
+    "layout": "L2",
+    "gran": "compact",
+    "query": "temporal",
+    "total_files": 119,
+    "files_read": 119,
+    "files_pruned": 0,
+    "files_pct": 100.0,
+    "bytes_read_mb": 3950.045525,
+    "total_bytes_mb": 3950.045525,
+    "total_rg": 3498,
+    "median_s": 0.02667749999818625,
+    "min_s": 0.025145083003735635,
+    "times_s": [
+      0.03582241699768929,
+      0.025145083003735635,
+      0.02667749999818625
+    ]
+  },
+  {
+    "layout": "L2",
+    "gran": "compact",
+    "query": "st_q57",
+    "total_files": 119,
+    "files_read": 1,
+    "files_pruned": 118,
+    "files_pct": 0.8403361344537815,
+    "bytes_read_mb": 334.218109,
+    "total_bytes_mb": 3950.045525,
+    "total_rg": 132,
+    "median_s": 1.3363371250015916,
+    "min_s": 1.3344717919972027,
+    "times_s": [
+      1.3363371250015916,
+      1.3344717919972027,
+      1.3421797080009128
+    ]
+  },
+  {
+    "layout": "L3",
+    "gran": "compact",
+    "query": "spatial",
+    "total_files": 299,
+    "files_read": 1,
+    "files_pruned": 298,
+    "files_pct": 0.33444816053511706,
+    "bytes_read_mb": 81.460372,
+    "total_bytes_mb": 4169.277135,
+    "total_rg": 22,
+    "median_s": 0.19405154199921526,
+    "min_s": 0.19395870900189038,
+    "times_s": [
+      0.22588266599632334,
+      0.19405154199921526,
+      0.19395870900189038
+    ]
+  },
+  {
+    "layout": "L3",
+    "gran": "compact",
+    "query": "temporal",
+    "total_files": 299,
+    "files_read": 299,
+    "files_pruned": 0,
+    "files_pct": 100.0,
+    "bytes_read_mb": 4169.277135,
+    "total_bytes_mb": 4169.277135,
+    "total_rg": 7304,
+    "median_s": 0.059416834003059193,
+    "min_s": 0.047829708993958775,
+    "times_s": [
+      0.0637253749955562,
+      0.059416834003059193,
+      0.047829708993958775
+    ]
+  },
+  {
+    "layout": "L3",
+    "gran": "compact",
+    "query": "st_q57",
+    "total_files": 299,
+    "files_read": 4,
+    "files_pruned": 295,
+    "files_pct": 1.3377926421404682,
+    "bytes_read_mb": 354.154111,
+    "total_bytes_mb": 4169.277135,
+    "total_rg": 176,
+    "median_s": 1.2500206669938052,
+    "min_s": 1.2439027920045191,
+    "times_s": [
+      1.291603290999774,
+      1.2500206669938052,
+      1.2439027920045191
+    ]
+  },
+  {
+    "layout": "L4",
+    "gran": "compact",
+    "query": "spatial",
+    "total_files": 24,
+    "files_read": 24,
+    "files_pruned": 0,
+    "files_pct": 100.0,
+    "bytes_read_mb": 3396.918772,
+    "total_bytes_mb": 3396.918772,
+    "total_rg": 504,
+    "median_s": 2.572277083003428,
+    "min_s": 2.5642182910014526,
+    "times_s": [
+      2.9557752079999773,
+      2.5642182910014526,
+      2.572277083003428
+    ]
+  },
+  {
+    "layout": "L4",
+    "gran": "compact",
+    "query": "temporal",
+    "total_files": 24,
+    "files_read": 2,
+    "files_pruned": 22,
+    "files_pct": 8.333333333333334,
+    "bytes_read_mb": 237.401525,
+    "total_bytes_mb": 3396.918772,
+    "total_rg": 42,
+    "median_s": 0.004521582995948847,
+    "min_s": 0.004457499999261927,
+    "times_s": [
+      0.006592874997295439,
+      0.004457499999261927,
+      0.004521582995948847
+    ]
+  },
+  {
+    "layout": "L4",
+    "gran": "compact",
+    "query": "st_q57",
+    "total_files": 24,
+    "files_read": 24,
+    "files_pruned": 0,
+    "files_pct": 100.0,
+    "bytes_read_mb": 3396.918772,
+    "total_bytes_mb": 3396.918772,
+    "total_rg": 504,
+    "median_s": 4.039671416998317,
+    "min_s": 4.0106832919991575,
+    "times_s": [
+      4.04527283400239,
+      4.039671416998317,
+      4.0106832919991575
+    ]
+  }
+]

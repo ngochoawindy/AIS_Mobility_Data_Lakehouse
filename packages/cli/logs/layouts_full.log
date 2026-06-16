@@ -1,0 +1,1407 @@
+[layouts] FATAL file=aisdk-2026-01-01.parquet error=IOException: IO Error: Could not read enough bytes from file "data/clean/layouts/.duckdb_layout_spill/duckdb_temp_storage_DEFAULT-0.tmp": attempted to read 262144 bytes from location 801374208
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    result = _run_one_layouts(
+        con,
+    ...<6 lines>...
+        segs_per_box=segs_per_box,
+    )
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 402, in _prep_base_segments
+    base_count = build_base_segments(con, params=params)
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/trajectory.py", line 23, in build_base_segments
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<141 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.IOException: IO Error: Could not read enough bytes from file "data/clean/layouts/.duckdb_layout_spill/duckdb_temp_storage_DEFAULT-0.tmp": attempted to read 262144 bytes from location 801374208
+
+[layouts] FATAL file=aisdk-2026-01-02.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 64.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 402, in _prep_base_segments
+    base_count = build_base_segments(con, params=params)
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/trajectory.py", line 23, in build_base_segments
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<141 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 64.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-03.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 32.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 32.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-04.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 64.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 64.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-05.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-06.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-07.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 64.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 64.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-08.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-09.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 32.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 32.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-10.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-11.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 96.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 96.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-12.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 160.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 160.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-13.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-14.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-15.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-16.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 64.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 64.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-17.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-18.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-19.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-20.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-21.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-22.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-23.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 64.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 64.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-24.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 32.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 32.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-25.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-26.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-27.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 64.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 64.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-28.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-29.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 32.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 32.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-30.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 64.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 64.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] FATAL file=aisdk-2026-01-31.parquet error=OutOfMemoryException: Out of Memory Error: failed to offload data block of size 32.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+Traceback (most recent call last):
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 569, in clean_raw_parquets_layouts
+    for parquet_file in sorted(raw_dir.glob("*.parquet")):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+                region_size_m=region_size_m,
+    
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 432, in _run_one_layouts
+    raw_count, base_count = _prep_base_segments(con, parquet_file, params=params)
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/clean.py", line 400, in _prep_base_segments
+    segment_clean_points(con, parquet_file=parquet_file, params=params)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/segment.py", line 30, in segment_clean_points
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<379 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 32.0 KiB (16383.9 PiB/167.3 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+
+[layouts] processed 0 day(s); 31 with errors. Report: data/clean/layouts/failed_days.json
+No raw Parquet files found in raw directory.
+     1409.01 real       663.68 user       190.34 sys

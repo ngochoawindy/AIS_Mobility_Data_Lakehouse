@@ -1,0 +1,157 @@
+Compacting L1 for 2026-01: data/layouts_daily → data/layout_compact
+  L1: 31 day(s) × 16 partition(s) → data/layout_compact
+  L1 [1/16] shard=0 rows=30573  sources=31
+  L1 [2/16] shard=1 rows=23491  sources=31
+  L1 [3/16] shard=10 rows=15342  sources=31
+  L1 [4/16] shard=11 rows=31076  sources=31
+  L1 [5/16] shard=12 rows=25061  sources=31
+  L1 [6/16] shard=13 rows=23096  sources=31
+  L1 [7/16] shard=14 rows=24162  sources=31
+  L1 [8/16] shard=15 rows=27019  sources=31
+  L1 [9/16] shard=2 rows=17550  sources=31
+  L1 [10/16] shard=3 rows=28044  sources=31
+  L1 [11/16] shard=4 rows=33088  sources=31
+  L1 [12/16] shard=5 rows=21383  sources=31
+  L1 [13/16] shard=6 rows=22809  sources=31
+  L1 [14/16] shard=7 rows=19974  sources=31
+  L1 [15/16] shard=8 rows=18135  sources=31
+  L1 [16/16] shard=9 rows=20910  sources=31
+  L1 2026-01 compacted: rows=381713 out=data/layout_compact/L1/year=2026/month=01 total_s=20.088
+───────────────────────────── Traceback (most recent call last) ─────────────────────────────────────────────────────────────────────────────────────╮
+│ /Users/ngochoapham/Thesis/ver2/packages/cli/src/aau_ais_mobilityduck_cli/pipeline.py:237 in compact_layout                                                                                                  │
+│                                                                                                                                                                                                             │
+│   234 │   print(f"[cyan]Compacting {layout} for {year}-{mo:02d}: "                                                                                                                                          │
+│   235 │   │     f"{src_root} → {dst_root}[/cyan]")                                                                                                                                                          │
+│   236 │   try:                                                                                                                                                                                              │
+│ ❱ 237 │   │   compact_daily_to_monthly(                                                                                                                                                                     │
+│   238 │   │   │   layout=layout, year=year, month=mo,                                                                                                                                                       │
+│   239 │   │   │   src_root=src_root, dst_root=dst_root,                                                                                                                                                     │
+│   240 │   │   │   runtime=runtime, delete_sources=delete_sources,                                                                                                                                           │
+│                                                                                                                                                                                                             │
+│ ╭──────────────────────────────────────────────────────────── locals ────────────────────────────────────────────────────────────╮                                                                          │
+│ │ delete_sources = False                                                                                                         │                                                                          │
+│ │        dst_dir = 'data/layout_compact'                                                                                         │                                                                          │
+│ │       dst_root = PosixPath('data/layout_compact')                                                                              │                                                                          │
+│ │         layout = 'L1'                                                                                                          │                                                                          │
+│ │   memory_limit = '10GB'                                                                                                        │                                                                          │
+│ │             mo = 1                                                                                                             │                                                                          │
+│ │          month = '2026-01'                                                                                                     │                                                                          │
+│ │        runtime = DuckdbRuntime(                                                                                                │                                                                          │
+│ │                  │   extension_path='/Users/ngochoapham/Thesis/MobilityDuck/build/release/extension/mobilityduck/mobi'+25,     │                                                                          │
+│ │                  │   extension_name='mobilityduck',                                                                            │                                                                          │
+│ │                  │   allow_unsigned_extensions=True,                                                                           │                                                                          │
+│ │                  │   memory_limit='10GB',                                                                                      │                                                                          │
+│ │                  │   threads=2,                                                                                                │                                                                          │
+│ │                  │   max_temp_directory_size=None,                                                                             │                                                                          │
+│ │                  │   spill_dir=None                                                                                            │                                                                          │
+│ │                  )                                                                                                             │                                                                          │
+│ │       settings = Settings(                                                                                                     │                                                                          │
+│ │                  │   mobilityduck=MobilityDuckSettings(                                                                        │                                                                          │
+│ │                  │   │   extension_name='mobilityduck',                                                                        │                                                                          │
+│ │                  │   │   extension_path='/Users/ngochoapham/Thesis/MobilityDuck/build/release/extension/mobilityduck/mobi'+25, │                                                                          │
+│ │                  │   │   allow_unsigned_extensions=True                                                                        │                                                                          │
+│ │                  │   ),                                                                                                        │                                                                          │
+│ │                  │   pipeline=PipelineSettings(                                                                                │                                                                          │
+│ │                  │   │   raw_dir=PosixPath('data/raw'),                                                                        │                                                                          │
+│ │                  │   │   l0_dir=PosixPath('data/L0'),                                                                          │                                                                          │
+│ │                  │   │   layout_dir=PosixPath('data/layouts'),                                                                 │                                                                          │
+│ │                  │   │   metric_srid='+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs',                                      │                                                                          │
+│ │                  │   │   metric_epsg=32632,                                                                                    │                                                                          │
+│ │                  │   │   time_gap_seconds=600,                                                                                 │                                                                          │
+│ │                  │   │   max_speed_knots=100.0,                                                                                │                                                                          │
+│ │                  │   │   max_implied_speed_knots=100.0,                                                                        │                                                                          │
+│ │                  │   │   stop_speed_knots=1.0,                                                                                 │                                                                          │
+│ │                  │   │   min_stop_seconds=300,                                                                                 │                                                                          │
+│ │                  │   │   min_motion_points=3,                                                                                  │                                                                          │
+│ │                  │   │   max_vessel_outlier_pct=0.5,                                                                           │                                                                          │
+│ │                  │   │   study_area_lonlat_bbox=(-16.1, 32.88, 40.18, 84.17),                                                  │                                                                          │
+│ │                  │   │   duckdb_memory_limit=None,                                                                             │                                                                          │
+│ │                  │   │   duckdb_temp_directory=None,                                                                           │                                                                          │
+│ │                  │   │   duckdb_max_temp_directory_size=None,                                                                  │                                                                          │
+│ │                  │   │   duckdb_threads=2                                                                                      │                                                                          │
+│ │                  │   )                                                                                                         │                                                                          │
+│ │                  )                                                                                                             │                                                                          │
+│ │        src_dir = 'data/layouts_daily'                                                                                          │                                                                          │
+│ │       src_root = PosixPath('data/layouts_daily')                                                                               │                                                                          │
+│ │           year = 2026                                                                                                          │                                                                          │
+│ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                                          │
+│                                                                                                                                                                                                             │
+│ /Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/compact.py:155 in compact_daily_to_monthly                                                                               │
+│                                                                                                                                                                                                             │
+│   152 │   │   for i, pkeys in enumerate(partitions, start=1):                                                                                                                                               │
+│   153 │   │   │   target = month_dir / pkeys.subpath / "data.parquet"                                                                                                                                       │
+│   154 │   │   │   if target.exists():                                                                                                                                                                       │
+│ ❱ 155 │   │   │   │   rows = _count_rows(con, target)                                                                                                                                                       │
+│   156 │   │   │   │   total_rows += rows                                                                                                                                                                    │
+│   157 │   │   │   │   print(f"  {layout} [{i}/{len(partitions)}] {pkeys.subpath} "                                                                                                                          │
+│   158 │   │   │   │   │     f"already exists, rows={rows}")                                                                                                                                                 │
+│                                                                                                                                                                                                             │
+│ ╭────────────────────────────────────────────────────────── locals ──────────────────────────────────────────────────────────╮                                                                              │
+│ │            con = <_duckdb.DuckDBPyConnection object at 0x109d8cf70>                                                        │                                                                              │
+│ │       day_dirs = [                                                                                                         │                                                                              │
+│ │                  │   PosixPath('data/layouts_daily/L1/day=2026-01-01'),                                                    │                                                                              │
+│ │                  │   PosixPath('data/layouts_daily/L1/day=2026-01-02'),                                                    │                                                                              │
+│ │                  │   PosixPath('data/layouts_daily/L1/day=2026-01-03'),                                                    │                                                                              │
+│ │                  │   PosixPath('data/layouts_daily/L1/day=2026-01-04'),                                                    │                                                                              │
+│ │                  │   PosixPath('data/layouts_daily/L1/day=2026-01-05'),                                                    │                                                                              │
+│ │                  │   PosixPath('data/layouts_daily/L1/day=2026-01-06'),                                                    │                                                                              │
+│ │                  │   PosixPath('data/layouts_daily/L1/day=2026-01-07'),                                                    │                                                                              │
+│ │                  │   PosixPath('data/layouts_daily/L1/day=2026-01-08'),                                                    │                                                                              │
+│ │                  │   PosixPath('data/layouts_daily/L1/day=2026-01-09'),                                                    │                                                                              │
+│ │                  │   PosixPath('data/layouts_daily/L1/day=2026-01-10'),                                                    │                                                                              │
+│ │                  │   ... +21                                                                                               │                                                                              │
+│ │                  ]                                                                                                         │                                                                              │
+│ │ delete_sources = False                                                                                                     │                                                                              │
+│ │       dst_root = PosixPath('data/layout_compact')                                                                          │                                                                              │
+│ │              i = 8                                                                                                         │                                                                              │
+│ │         layout = 'L1'                                                                                                      │                                                                              │
+│ │     layout_src = PosixPath('data/layouts_daily/L1')                                                                        │                                                                              │
+│ │          month = 1                                                                                                         │                                                                              │
+│ │      month_dir = PosixPath('data/layout_compact/L1/year=2026/month=01')                                                    │                                                                              │
+│ │     partitions = [                                                                                                         │                                                                              │
+│ │                  │   PartitionKeys(parts=('shard=0',)),                                                                    │                                                                              │
+│ │                  │   PartitionKeys(parts=('shard=1',)),                                                                    │                                                                              │
+│ │                  │   PartitionKeys(parts=('shard=10',)),                                                                   │                                                                              │
+│ │                  │   PartitionKeys(parts=('shard=11',)),                                                                   │                                                                              │
+│ │                  │   PartitionKeys(parts=('shard=12',)),                                                                   │                                                                              │
+│ │                  │   PartitionKeys(parts=('shard=13',)),                                                                   │                                                                              │
+│ │                  │   PartitionKeys(parts=('shard=14',)),                                                                   │                                                                              │
+│ │                  │   PartitionKeys(parts=('shard=15',)),                                                                   │                                                                              │
+│ │                  │   PartitionKeys(parts=('shard=2',)),                                                                    │                                                                              │
+│ │                  │   PartitionKeys(parts=('shard=3',)),                                                                    │                                                                              │
+│ │                  │   ... +6                                                                                                │                                                                              │
+│ │                  ]                                                                                                         │                                                                              │
+│ │        pattern = ('shard=*',)                                                                                              │                                                                              │
+│ │          pkeys = PartitionKeys(parts=('shard=15',))                                                                        │                                                                              │
+│ │           rows = 24162                                                                                                     │                                                                              │
+│ │        runtime = DuckdbRuntime(                                                                                            │                                                                              │
+│ │                  │   extension_path='/Users/ngochoapham/Thesis/MobilityDuck/build/release/extension/mobilityduck/mobi'+25, │                                                                              │
+│ │                  │   extension_name='mobilityduck',                                                                        │                                                                              │
+│ │                  │   allow_unsigned_extensions=True,                                                                       │                                                                              │
+│ │                  │   memory_limit='10GB',                                                                                  │                                                                              │
+│ │                  │   threads=2,                                                                                            │                                                                              │
+│ │                  │   max_temp_directory_size=None,                                                                         │                                                                              │
+│ │                  │   spill_dir=None                                                                                        │                                                                              │
+│ │                  )                                                                                                         │                                                                              │
+│ │          spill = PosixPath('/Users/ngochoapham/Thesis/ver2/packages/cli/data/layout_compact/.spill')                       │                                                                              │
+│ │       src_root = PosixPath('data/layouts_daily')                                                                           │                                                                              │
+│ │             t0 = 25987.375109166                                                                                           │                                                                              │
+│ │         target = PosixPath('data/layout_compact/L1/year=2026/month=01/shard=15/data.parquet')                              │                                                                              │
+│ │     total_rows = 172801                                                                                                    │                                                                              │
+│ │           year = 2026                                                                                                      │                                                                              │
+│ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                                              │
+│                                                                                                                                                                                                             │
+│ /Users/ngochoapham/Thesis/ver2/packages/pipeline/src/aau_ais_mobilityduck_pipeline/compact.py:192 in _count_rows                                                                                            │
+│                                                                                                                                                                                                             │
+│   189                                                                                          ╭────────────────────────────────────── locals ───────────────────────────────────────╮                      │
+│   190 def _count_rows(con: duckdb.DuckDBPyConnection, path: Path) -> int:                      │  con = <_duckdb.DuckDBPyConnection object at 0x109d8cf70>                           │                      │
+│   191 │   return int(                                                                          │ path = PosixPath('data/layout_compact/L1/year=2026/month=01/shard=15/data.parquet') │                      │
+│ ❱ 192 │   │   con.execute(                                                                     ╰─────────────────────────────────────────────────────────────────────────────────────╯                      │
+│   193 │   │   │   f"SELECT COUNT(*) FROM read_parquet('{path.as_posix()}')"                                                                                                                                 │
+│   194 │   │   ).fetchone()[0]                                                                                                                                                                               │
+│   195 │   )                                                                                                                                                                                                 │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+InvalidInputException: Invalid Input Error: File 'data/layout_compact/L1/year=2026/month=01/shard=15/data.parquet' too small to be a Parquet file
+
+LINE 1: SELECT COUNT(*) FROM read_parquet('data/layout_compact/L1/year=2026/month=01...
+                             ^

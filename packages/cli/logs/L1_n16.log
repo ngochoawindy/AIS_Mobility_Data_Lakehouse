@@ -1,0 +1,18 @@
+Building L1 for 2026-01 from L0=data/L0 → data/layouts/L1_n16
+  L1 shard=0 rows=50499
+  L1 shard=1 rows=32030
+  L1 shard=2 rows=28441
+  L1 shard=3 rows=36449
+  L1 shard=4 rows=44806
+  L1 shard=5 rows=29870
+  L1 shard=6 rows=32701
+  L1 shard=7 rows=34052
+  L1 shard=8 rows=27897
+  L1 shard=9 rows=32827
+  L1 shard=10 rows=21859
+  L1 shard=11 rows=39311
+  L1 shard=12 rows=34890
+  L1 shard=13 rows=33289
+  L1 shard=14 rows=30854
+  L1 shard=15 rows=38690
+[L1] 2026-01 base_rows=548465 rows=548465 out=data/layouts/L1_n16/L1/year=2026/month=01 total_s=65.157

@@ -1,0 +1,139 @@
+### [08:25:33] duckdb LH sweep
+
+=== duckdb · LH_compact (Hilbert order, compact) ===
+  q57              day      files   64/64   (100.0%) rg   36/64   ( 56.2%)  3538.4 MB  t=0.6631s  [n_both=4]
+  q57              week     files   64/64   (100.0%) rg   36/64   ( 56.2%)  3538.4 MB  t=3.0800s  [n_both=4]
+  q58              day      files   64/64   (100.0%) rg   32/64   ( 50.0%)  3538.4 MB  t=0.8103s  [n_vessels=100]
+  q58              week     files   64/64   (100.0%) rg   32/64   ( 50.0%)  3538.4 MB  t=3.5029s  [n_vessels=169]
+  q59              day      files   64/64   (100.0%) rg   36/64   ( 56.2%)  3538.4 MB  t=0.7824s  [n_vessels=115,n_clips=415]
+  q59              week     files   64/64   (100.0%) rg   36/64   ( 56.2%)  3538.4 MB  t=4.5486s  [n_vessels=564,n_clips=3001]
+  q510             day      files   64/64   (100.0%) rg   36/64   ( 56.2%)  3538.4 MB  t=25.1649s  [n_pairs=240]
+  q511             belt_day files   64/64   (100.0%) rg   36/64   ( 56.2%)  3538.4 MB  t=25.3540s  [n_pairs=180]
+
+=== duckdb · LH_daily (Hilbert order, daily) ===
+  q57              day      files  279/279  (100.0%) rg    5/279  (  1.8%)  3561.0 MB  t=0.3998s  [n_both=4]
+  q57              week     files  279/279  (100.0%) rg   42/279  ( 15.1%)  3561.0 MB  t=2.7116s  [n_both=4]
+  q58              day      files  279/279  (100.0%) rg    4/279  (  1.4%)  3561.0 MB  t=0.5168s  [n_vessels=100]
+  q58              week     files  279/279  (100.0%) rg   28/279  ( 10.0%)  3561.0 MB  t=3.3119s  [n_vessels=169]
+  q59              day      files  279/279  (100.0%) rg    6/279  (  2.2%)  3561.0 MB  t=0.6511s  [n_vessels=115,n_clips=415]
+  q59              week     files  279/279  (100.0%) rg   45/279  ( 16.1%)  3561.0 MB  t=4.3588s  [n_vessels=564,n_clips=3001]
+  q510             day      files  279/279  (100.0%) rg    6/279  (  2.2%)  3561.0 MB  t=26.6130s  [n_pairs=240]
+  q511             belt_day files  279/279  (100.0%) rg    6/279  (  2.2%)  3561.0 MB  t=26.5774s  [n_pairs=180]
+
+Saved: /Users/ngochoapham/Thesis/ver2/packages/cli/results/_lh_duck.csv
+       /Users/ngochoapham/Thesis/ver2/packages/cli/results/_lh_duck.json
+### [08:34:11] full iceberg_scan sweep (all layouts incl LH)
+
+=== duckdb_iceberg_scan · L0_daily (base segments, daily) ===
+  q57              day      files    1/31   (  3.2%) rg    1/1    (100.0%)   119.3 MB  t=0.5523s  [n_both=4]
+  q57              week     files    7/31   ( 22.6%) rg    7/7    (100.0%)   828.2 MB  t=2.8765s  [n_both=4]
+  q58              day      files    1/31   (  3.2%) rg    1/1    (100.0%)   119.3 MB  t=0.6641s  [n_vessels=100]
+  q58              week     files    7/31   ( 22.6%) rg    7/7    (100.0%)   828.2 MB  t=3.3545s  [n_vessels=169]
+  q59              day      files    1/31   (  3.2%) rg    1/1    (100.0%)   119.3 MB  t=0.7867s  [n_vessels=115,n_clips=415]
+  q59              week     files    7/31   ( 22.6%) rg    7/7    (100.0%)   828.2 MB  t=4.5497s  [n_vessels=564,n_clips=3001]
+  q510             day      files    1/31   (  3.2%) rg    1/1    (100.0%)   119.3 MB  t=25.1596s  [n_pairs=240]
+  q511             belt_day files    1/31   (  3.2%) rg    1/1    (100.0%)   119.3 MB  t=25.9185s  [n_pairs=180]
+
+=== duckdb_iceberg_scan · L1_compact (hash(mmsi), compact) ===
+  q57              day      files   16/16   (100.0%) rg   16/16   (100.0%)  3551.3 MB  t=1.2380s  [n_both=4]
+  q57              week     files   16/16   (100.0%) rg   16/16   (100.0%)  3551.3 MB  t=3.4746s  [n_both=4]
+  q58              day      files   16/16   (100.0%) rg   16/16   (100.0%)  3551.3 MB  t=1.2626s  [n_vessels=100]
+  q58              week     files   16/16   (100.0%) rg   16/16   (100.0%)  3551.3 MB  t=3.8235s  [n_vessels=169]
+  q59              day      files   16/16   (100.0%) rg   16/16   (100.0%)  3551.3 MB  t=1.3225s  [n_vessels=115,n_clips=415]
+  q59              week     files   16/16   (100.0%) rg   16/16   (100.0%)  3551.3 MB  t=4.8104s  [n_vessels=564,n_clips=3001]
+  q510             day      files   16/16   (100.0%) rg   16/16   (100.0%)  3551.3 MB  t=25.2960s  [n_pairs=240]
+  q511             belt_day files   16/16   (100.0%) rg   16/16   (100.0%)  3551.3 MB  t=25.4282s  [n_pairs=180]
+
+=== duckdb_iceberg_scan · L2_compact (spaceSplit tiles, compact) ===
+  q57              day      files   13/302  (  4.3%) rg   15/17   ( 88.2%)   378.8 MB  t=0.2348s  [n_both=4]
+  q57              week     files   14/302  (  4.6%) rg   16/18   ( 88.9%)   378.8 MB  t=0.4601s  [n_both=4]
+  q58              day      files   11/302  (  3.6%) rg   12/18   ( 66.7%)   905.9 MB  t=0.3230s  [n_vessels=100]
+  q58              week     files   11/302  (  3.6%) rg   12/18   ( 66.7%)   905.9 MB  t=1.0523s  [n_vessels=169]
+  q59              day      files   13/302  (  4.3%) rg   15/17   ( 88.2%)   378.8 MB  t=0.5185s  [n_vessels=115,n_clips=4065]
+  q59              week     files   14/302  (  4.6%) rg   16/18   ( 88.9%)   378.8 MB  t=2.9116s  [n_vessels=564,n_clips=28534]
+  q510             day      files   13/302  (  4.3%) rg   15/17   ( 88.2%)   378.8 MB  t=0.3904s  [n_pairs=201]
+  q511             belt_day files   13/302  (  4.3%) rg   15/17   ( 88.2%)   378.8 MB  t=0.4364s  [n_pairs=170]
+
+=== duckdb_iceberg_scan · L3_compact (MEST tiles, compact) ===
+  q57              day      files   13/299  (  4.3%) rg   15/16   ( 93.8%)   382.4 MB  t=0.2083s  [n_both=4]
+  q57              week     files   14/299  (  4.7%) rg   16/17   ( 94.1%)   382.4 MB  t=0.4233s  [n_both=4]
+  q58              day      files   11/299  (  3.7%) rg   10/20   ( 50.0%)   920.5 MB  t=0.2729s  [n_vessels=100]
+  q58              week     files   11/299  (  3.7%) rg   11/20   ( 55.0%)   920.5 MB  t=1.0238s  [n_vessels=169]
+  q59              day      files   13/299  (  4.3%) rg   15/16   ( 93.8%)   382.4 MB  t=0.5306s  [n_vessels=115,n_clips=4670]
+  q59              week     files   14/299  (  4.7%) rg   16/17   ( 94.1%)   382.4 MB  t=3.0662s  [n_vessels=564,n_clips=34809]
+  q510             day      files   13/299  (  4.3%) rg   15/16   ( 93.8%)   382.4 MB  t=0.3928s  [n_pairs=198]
+  q511             belt_day files   13/299  (  4.3%) rg   15/16   ( 93.8%)   382.4 MB  t=0.4082s  [n_pairs=168]
+
+=== duckdb_iceberg_scan · L4_compact (timeSplit(hour), compact) ===
+  q57              day      files   24/24   (100.0%) rg   24/24   (100.0%)  3362.3 MB  t=1.9034s  [n_both=4]
+  q57              week     files   24/24   (100.0%) rg   24/24   (100.0%)  3362.3 MB  t=2.3717s  [n_both=4]
+  q58              day      files   24/24   (100.0%) rg   24/24   (100.0%)  3362.3 MB  t=1.9478s  [n_vessels=100]
+  q58              week     files   24/24   (100.0%) rg   24/24   (100.0%)  3362.3 MB  t=2.5064s  [n_vessels=169]
+  q59              day      files   24/24   (100.0%) rg   24/24   (100.0%)  3362.3 MB  t=2.1108s  [n_vessels=115,n_clips=557]
+  q59              week     files   24/24   (100.0%) rg   24/24   (100.0%)  3362.3 MB  t=3.3784s  [n_vessels=564,n_clips=4023]
+  q510             day      files   24/24   (100.0%) rg   24/24   (100.0%)  3362.3 MB  t=2.4463s  [n_pairs=204]
+  q511             belt_day files   24/24   (100.0%) rg   24/24   (100.0%)  3362.3 MB  t=2.4510s  [n_pairs=172]
+
+=== duckdb_iceberg_scan · L1_daily (hash(mmsi), daily) ===
+  q57              day      files   16/496  (  3.2%) rg   16/16   (100.0%)   119.3 MB  t=0.3834s  [n_both=4]
+  q57              week     files  112/496  ( 22.6%) rg  112/112  (100.0%)   827.8 MB  t=2.7958s  [n_both=4]
+  q58              day      files   16/496  (  3.2%) rg   16/16   (100.0%)   119.3 MB  t=0.5050s  [n_vessels=100]
+  q58              week     files  112/496  ( 22.6%) rg  112/112  (100.0%)   827.8 MB  t=3.2865s  [n_vessels=169]
+  q59              day      files   16/496  (  3.2%) rg   16/16   (100.0%)   119.3 MB  t=0.6175s  [n_vessels=115,n_clips=415]
+  q59              week     files  112/496  ( 22.6%) rg  112/112  (100.0%)   827.8 MB  t=4.4739s  [n_vessels=564,n_clips=3001]
+  q510             day      files   16/496  (  3.2%) rg   16/16   (100.0%)   119.3 MB  t=25.3024s  [n_pairs=240]
+  q511             belt_day files   16/496  (  3.2%) rg   16/16   (100.0%)   119.3 MB  t=25.7188s  [n_pairs=180]
+
+=== duckdb_iceberg_scan · L2_daily (spaceSplit tiles, daily) ===
+  q57              day      files   13/4154 (  0.3%) rg    7/13   ( 53.8%)    23.5 MB  t=0.0856s  [n_both=4]
+  q57              week     files   47/4154 (  1.1%) rg   41/47   ( 87.2%)    89.9 MB  t=0.3472s  [n_both=4]
+  q58              day      files    4/4154 (  0.1%) rg    2/4    ( 50.0%)    17.7 MB  t=0.2074s  [n_vessels=100]
+  q58              week     files   17/4154 (  0.4%) rg   15/17   ( 88.2%)    72.0 MB  t=0.9658s  [n_vessels=169]
+  q59              day      files   13/4154 (  0.3%) rg    7/13   ( 53.8%)    23.5 MB  t=0.4562s  [n_vessels=115,n_clips=4065]
+  q59              week     files   47/4154 (  1.1%) rg   41/47   ( 87.2%)    89.9 MB  t=2.8239s  [n_vessels=564,n_clips=28534]
+  q510             day      files   13/4154 (  0.3%) rg    7/13   ( 53.8%)    23.5 MB  t=0.3178s  [n_pairs=201]
+  q511             belt_day files   13/4154 (  0.3%) rg    7/13   ( 53.8%)    23.5 MB  t=0.3485s  [n_pairs=170]
+
+=== duckdb_iceberg_scan · L3_daily (MEST tiles, daily) ===
+  q57              day      files   12/4133 (  0.3%) rg    6/12   ( 50.0%)    21.2 MB  t=0.0814s  [n_both=4]
+  q57              week     files   46/4133 (  1.1%) rg   40/46   ( 87.0%)    88.4 MB  t=0.3088s  [n_both=4]
+  q58              day      files    4/4133 (  0.1%) rg    2/4    ( 50.0%)    18.1 MB  t=0.2049s  [n_vessels=100]
+  q58              week     files   17/4133 (  0.4%) rg   15/17   ( 88.2%)    73.5 MB  t=0.9804s  [n_vessels=169]
+  q59              day      files   12/4133 (  0.3%) rg    6/12   ( 50.0%)    21.2 MB  t=0.4555s  [n_vessels=115,n_clips=4670]
+  q59              week     files   46/4133 (  1.1%) rg   40/46   ( 87.0%)    88.4 MB  t=2.7742s  [n_vessels=564,n_clips=34809]
+  q510             day      files   12/4133 (  0.3%) rg    6/12   ( 50.0%)    21.2 MB  t=0.3047s  [n_pairs=198]
+  q511             belt_day files   12/4133 (  0.3%) rg    6/12   ( 50.0%)    21.2 MB  t=0.3315s  [n_pairs=168]
+
+=== duckdb_iceberg_scan · L4_daily (timeSplit(hour), daily) ===
+  q57              day      files   25/744  (  3.4%) rg   24/25   ( 96.0%)   144.6 MB  t=0.1350s  [n_both=4]
+  q57              week     files  169/744  ( 22.7%) rg  168/169  ( 99.4%)   811.0 MB  t=0.6422s  [n_both=4]
+  q58              day      files   25/744  (  3.4%) rg   24/25   ( 96.0%)   144.6 MB  t=0.1716s  [n_vessels=100]
+  q58              week     files  169/744  ( 22.7%) rg  168/169  ( 99.4%)   811.0 MB  t=1.0750s  [n_vessels=169]
+  q59              day      files   25/744  (  3.4%) rg   24/25   ( 96.0%)   144.6 MB  t=0.3984s  [n_vessels=115,n_clips=557]
+  q59              week     files  169/744  ( 22.7%) rg  168/169  ( 99.4%)   811.0 MB  t=2.6516s  [n_vessels=564,n_clips=4023]
+  q510             day      files   25/744  (  3.4%) rg   24/25   ( 96.0%)   144.6 MB  t=0.6312s  [n_pairs=204]
+  q511             belt_day files   25/744  (  3.4%) rg   24/25   ( 96.0%)   144.6 MB  t=0.6460s  [n_pairs=172]
+
+=== duckdb_iceberg_scan · LH_compact (Hilbert order, compact) ===
+  q57              day      files   36/64   ( 56.2%) rg   36/36   (100.0%)  2186.1 MB  t=0.6990s  [n_both=4]
+  q57              week     files   36/64   ( 56.2%) rg   36/36   (100.0%)  2186.1 MB  t=3.1852s  [n_both=4]
+  q58              day      files   32/64   ( 50.0%) rg   32/32   (100.0%)  2126.8 MB  t=0.8957s  [n_vessels=100]
+  q58              week     files   32/64   ( 50.0%) rg   32/32   (100.0%)  2126.8 MB  t=3.5563s  [n_vessels=169]
+  q59              day      files   36/64   ( 56.2%) rg   36/36   (100.0%)  2186.1 MB  t=0.7927s  [n_vessels=115,n_clips=415]
+  q59              week     files   36/64   ( 56.2%) rg   36/36   (100.0%)  2186.1 MB  t=4.6504s  [n_vessels=564,n_clips=3001]
+  q510             day      files   36/64   ( 56.2%) rg   36/36   (100.0%)  2186.1 MB  t=25.9231s  [n_pairs=240]
+  q511             belt_day files   36/64   ( 56.2%) rg   36/36   (100.0%)  2186.1 MB  t=25.8040s  [n_pairs=180]
+
+=== duckdb_iceberg_scan · LH_daily (Hilbert order, daily) ===
+  q57              day      files    5/279  (  1.8%) rg    5/5    (100.0%)    72.3 MB  t=0.3922s  [n_both=4]
+  q57              week     files   42/279  ( 15.1%) rg   42/42   (100.0%)   525.6 MB  t=2.6998s  [n_both=4]
+  q58              day      files    4/279  (  1.4%) rg    4/4    (100.0%)    76.1 MB  t=0.5134s  [n_vessels=100]
+  q58              week     files   28/279  ( 10.0%) rg   28/28   (100.0%)   528.9 MB  t=3.3229s  [n_vessels=169]
+  q59              day      files    6/279  (  2.2%) rg    6/6    (100.0%)    82.3 MB  t=0.6497s  [n_vessels=115,n_clips=415]
+  q59              week     files   45/279  ( 16.1%) rg   45/45   (100.0%)   558.4 MB  t=4.3868s  [n_vessels=564,n_clips=3001]
+  q510             day      files    6/279  (  2.2%) rg    6/6    (100.0%)    82.3 MB  t=27.4557s  [n_pairs=240]
+  q511             belt_day files    6/279  (  2.2%) rg    6/6    (100.0%)    82.3 MB  t=27.9100s  [n_pairs=180]
+
+Saved: /Users/ngochoapham/Thesis/ver2/packages/cli/results/cmp_iceberg_scan.csv
+       /Users/ngochoapham/Thesis/ver2/packages/cli/results/cmp_iceberg_scan.json
+### [08:59:41] DONE

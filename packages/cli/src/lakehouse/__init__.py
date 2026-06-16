@@ -1,0 +1,1 @@
+"""AIS MobilityDuck CLI package."""

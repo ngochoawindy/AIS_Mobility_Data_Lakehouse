@@ -1,0 +1,9 @@
+query,layout,gran,n_files,total_bytes_mb,median_s,min_s,mean_s,columns,first_row
+with_parquet/temporal,L0,daily,31,3573.24,0.002576,0.002447,0.002576,n_segments|n_distinct_mmsi,1997|1529
+with_parquet/temporal,L4,monthly,24,3396.92,0.005850,0.004549,0.005850,n_segments|n_distinct_mmsi,2445|1529
+with_parquet/temporal,L4,daily,744,3405.63,0.061355,0.054956,0.061355,n_segments|n_distinct_mmsi,2445|1529
+with_parquet/temporal,L4,compact,24,3396.92,0.004343,0.004250,0.004343,n_segments|n_distinct_mmsi,2445|1529
+without_parquet/temporal,L0,daily,31,3573.24,0.009078,0.008210,0.009078,n_segments|n_distinct_mmsi,1997|1529
+without_parquet/temporal,L4,monthly,24,3396.92,0.034552,0.034209,0.034552,n_segments|n_distinct_mmsi,2445|1529
+without_parquet/temporal,L4,daily,744,3405.63,0.077261,0.075486,0.077261,n_segments|n_distinct_mmsi,2445|1529
+without_parquet/temporal,L4,compact,24,3396.92,0.033530,0.033481,0.033530,n_segments|n_distinct_mmsi,2445|1529

@@ -1,0 +1,5 @@
+Building Iceberg tables under /Users/ngochoapham/Thesis/ver2/packages/cli/data/iceberg/ (catalog: catalog.db, warehouse: warehouse/)
+  L2_compact     302 files    3823.4 MB  built in   29.1s  -> ais.L2_compact
+  L2_daily      4154 files    3833.4 MB  built in   47.0s  -> ais.L2_daily
+
+Done: 2 Iceberg tables.

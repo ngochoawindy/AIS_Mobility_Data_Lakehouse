@@ -1,0 +1,616 @@
+### [09:12:46] build L2 daily @ 50km (tile=1000, matches original tile)
+Building L2 for 2026-01 from L0=data/L0 → data/layouts_daily
+  L2: 376 candidate region cells × 31 day(s) (granularity=daily)
+  L2 [1/376] region=(-22,96) rows=1
+  L2 [2/376] region=(-21,93) rows=1
+  L2 [3/376] region=(-17,119) rows=1
+  L2 [4/376] region=(-14,100) rows=1
+  L2 [5/376] region=(-14,107) rows=1
+  L2 [6/376] region=(-13,104) rows=1
+  L2 [7/376] region=(-11,110) rows=1
+  L2 [8/376] region=(-11,127) rows=1
+  L2 [9/376] region=(-10,119) rows=1
+  L2 [10/376] region=(-9,115) rows=1
+  L2 [11/376] region=(-9,127) rows=2
+  L2 [12/376] region=(-8,116) rows=1
+  L2 [13/376] region=(-6,116) rows=1
+  L2 [14/376] region=(-5,110) rows=1
+  L2 [15/376] region=(-3,114) rows=4
+  L2 [16/376] region=(-2,114) rows=3
+  L2 [17/376] region=(-2,119) rows=1
+  L2 [18/376] region=(-2,120) rows=2
+  L2 [19/376] region=(-2,121) rows=66
+  L2 [20/376] region=(-2,122) rows=29
+  L2 [21/376] region=(-2,125) rows=9
+  L2 [22/376] region=(-2,126) rows=3
+  L2 [23/376] region=(-1,113) rows=1
+  L2 [24/376] region=(-1,114) rows=2
+  L2 [25/376] region=(-1,115) rows=1
+  L2 [27/376] region=(-1,122) rows=1
+  L2 [30/376] region=(-1,127) rows=320
+  L2 [31/376] region=(-1,128) rows=334
+  L2 [32/376] region=(0,114) rows=2
+  L2 [33/376] region=(0,121) rows=82
+  L2 [35/376] region=(0,123) rows=49
+  L2 [36/376] region=(0,124) rows=19
+  L2 [41/376] region=(1,115) rows=1
+  L2 [43/376] region=(1,122) rows=4
+  L2 [44/376] region=(1,123) rows=24
+  L2 [45/376] region=(1,124) rows=9
+  L2 [49/376] region=(2,114) rows=1
+  L2 [50/376] region=(2,115) rows=1
+  L2 [51/376] region=(2,116) rows=1
+  L2 [52/376] region=(2,121) rows=2
+  L2 [53/376] region=(2,122) rows=20
+  L2 [54/376] region=(2,123) rows=147
+  L2 [55/376] region=(2,124) rows=287
+  L2 [56/376] region=(2,125) rows=23
+  L2 [59/376] region=(3,114) rows=1
+  L2 [60/376] region=(3,116) rows=1
+  L2 [61/376] region=(3,121) rows=31
+  L2 [62/376] region=(3,122) rows=120
+  L2 [63/376] region=(3,123) rows=1569
+  L2 [64/376] region=(3,124) rows=11203
+  L2 [65/376] region=(3,125) rows=6804
+  L2 [66/376] region=(3,126) rows=26
+  L2 [69/376] region=(4,117) rows=1
+  L2 [70/376] region=(4,118) rows=1
+  L2 [71/376] region=(4,119) rows=1
+  L2 [72/376] region=(4,120) rows=13
+  L2 [73/376] region=(4,121) rows=85
+  L2 [74/376] region=(4,122) rows=5056
+  L2 [75/376] region=(4,123) rows=21345
+  L2 [76/376] region=(4,124) rows=18487
+  L2 [77/376] region=(4,125) rows=12145
+  L2 [78/376] region=(4,126) rows=618
+  L2 [79/376] region=(4,127) rows=1
+  L2 [81/376] region=(5,118) rows=6
+  L2 [82/376] region=(5,119) rows=126
+  L2 [83/376] region=(5,120) rows=173
+  L2 [84/376] region=(5,121) rows=1278
+  L2 [85/376] region=(5,122) rows=27890
+  L2 [86/376] region=(5,123) rows=21875
+  L2 [87/376] region=(5,124) rows=9150
+  L2 [88/376] region=(5,125) rows=6208
+  L2 [89/376] region=(5,126) rows=665
+  L2 [90/376] region=(5,127) rows=113
+  L2 [91/376] region=(6,118) rows=26
+  L2 [92/376] region=(6,119) rows=1231
+  L2 [93/376] region=(6,120) rows=1872
+  L2 [94/376] region=(6,121) rows=756
+  L2 [95/376] region=(6,122) rows=8897
+  L2 [96/376] region=(6,123) rows=17283
+  L2 [97/376] region=(6,124) rows=6881
+  L2 [98/376] region=(6,125) rows=1487
+  L2 [99/376] region=(6,126) rows=171
+  L2 [100/376] region=(6,127) rows=37
+  L2 [101/376] region=(6,128) rows=8
+  L2 [102/376] region=(7,111) rows=4
+  L2 [103/376] region=(7,118) rows=42
+  L2 [104/376] region=(7,119) rows=4312
+  L2 [105/376] region=(7,120) rows=10415
+  L2 [106/376] region=(7,121) rows=3681
+  L2 [107/376] region=(7,122) rows=15612
+  L2 [108/376] region=(7,123) rows=29929
+  L2 [109/376] region=(7,124) rows=33959
+  L2 [110/376] region=(7,125) rows=23363
+  L2 [111/376] region=(7,126) rows=6751
+  L2 [112/376] region=(7,127) rows=412
+  L2 [113/376] region=(7,128) rows=57
+  L2 [114/376] region=(8,118) rows=831
+  L2 [115/376] region=(8,119) rows=16135
+  L2 [116/376] region=(8,120) rows=15338
+  L2 [117/376] region=(8,121) rows=13544
+  L2 [118/376] region=(8,122) rows=38182
+  L2 [119/376] region=(8,123) rows=23647
+  L2 [120/376] region=(8,124) rows=37467
+  L2 [121/376] region=(8,125) rows=105095
+  L2 [122/376] region=(8,126) rows=144177
+  L2 [123/376] region=(8,127) rows=39402
+  L2 [124/376] region=(8,128) rows=1716
+  L2 [125/376] region=(9,117) rows=13
+  L2 [126/376] region=(9,118) rows=2577
+  L2 [127/376] region=(9,119) rows=21813
+  L2 [128/376] region=(9,120) rows=10068
+  L2 [129/376] region=(9,121) rows=30908
+  L2 [130/376] region=(9,122) rows=54958
+  L2 [131/376] region=(9,123) rows=34
+  L2 [133/376] region=(9,125) rows=15099
+  L2 [134/376] region=(9,126) rows=75990
+  L2 [135/376] region=(9,127) rows=179433
+  L2 [136/376] region=(9,128) rows=35917
+  L2 [137/376] region=(9,129) rows=496
+  L2 [138/376] region=(10,118) rows=2751
+  L2 [139/376] region=(10,119) rows=23166
+  L2 [140/376] region=(10,120) rows=42336
+  L2 [141/376] region=(10,121) rows=7233
+  L2 [142/376] region=(10,122) rows=13543
+  L2 [143/376] region=(10,123) rows=7996
+  L2 [145/376] region=(10,125) rows=6176
+  L2 [146/376] region=(10,126) rows=2512
+  L2 [147/376] region=(10,127) rows=132967
+  L2 [148/376] region=(10,128) rows=134319
+  L2 [149/376] region=(10,129) rows=13165
+  L2 [150/376] region=(10,130) rows=1139
+  L2 [151/376] region=(10,131) rows=82
+  L2 [152/376] region=(11,107) rows=47
+  L2 [159/376] region=(11,114) rows=1
+  L2 [163/376] region=(11,118) rows=530
+  L2 [165/376] region=(11,120) rows=104460
+  L2 [166/376] region=(11,121) rows=57299
+  L2 [167/376] region=(11,122) rows=27124
+  L2 [168/376] region=(11,123) rows=56108
+  L2 [169/376] region=(11,124) rows=42763
+  L2 [170/376] region=(11,125) rows=10112
+  L2 [171/376] region=(11,126) rows=21320
+  L2 [172/376] region=(11,127) rows=84359
+  L2 [173/376] region=(11,128) rows=218082
+  L2 [174/376] region=(11,129) rows=17039
+  L2 [175/376] region=(11,130) rows=2863
+  L2 [176/376] region=(11,131) rows=1402
+  L2 [177/376] region=(11,132) rows=85
+  L2 [178/376] region=(12,117) rows=2
+  L2 [179/376] region=(12,119) rows=9465
+  L2 [180/376] region=(12,120) rows=97699
+  L2 [181/376] region=(12,121) rows=250853
+  L2 [182/376] region=(12,122) rows=137339
+  L2 [183/376] region=(12,123) rows=147723
+  L2 [184/376] region=(12,124) rows=169343
+  L2 [185/376] region=(12,125) rows=55397
+  L2 [186/376] region=(12,126) rows=25192
+  L2 [187/376] region=(12,127) rows=257211
+  L2 [188/376] region=(12,128) rows=156747
+  L2 [189/376] region=(12,129) rows=13307
+  L2 [190/376] region=(12,130) rows=512
+  L2 [191/376] region=(12,131) rows=68
+  L2 [192/376] region=(13,115) rows=24
+  L2 [196/376] region=(13,119) rows=846
+  L2 [197/376] region=(13,120) rows=250327
+  L2 [198/376] region=(13,121) rows=50917
+  L2 [199/376] region=(13,122) rows=5263
+  L2 [200/376] region=(13,123) rows=7379
+  L2 [201/376] region=(13,124) rows=51935
+  L2 [202/376] region=(13,125) rows=185530
+  L2 [203/376] region=(13,126) rows=215651
+  L2 [204/376] region=(13,127) rows=260491
+  L2 [205/376] region=(13,128) rows=35626
+  L2 [206/376] region=(13,129) rows=160
+  L2 [207/376] region=(14,119) rows=474
+  L2 [208/376] region=(14,120) rows=133978
+  L2 [209/376] region=(14,121) rows=232093
+  L2 [210/376] region=(14,122) rows=108998
+  L2 [211/376] region=(14,123) rows=161106
+  L2 [212/376] region=(14,124) rows=182078
+  L2 [213/376] region=(14,125) rows=40961
+  L2 [214/376] region=(14,126) rows=3732
+  L2 [215/376] region=(14,129) rows=64
+  L2 [216/376] region=(14,130) rows=78
+  L2 [225/376] region=(15,120) rows=1676
+  L2 [226/376] region=(15,121) rows=164643
+  L2 [227/376] region=(15,122) rows=123993
+  L2 [228/376] region=(15,123) rows=3977
+  L2 [229/376] region=(15,124) rows=1
+  L2 [232/376] region=(15,130) rows=7
+  L2 [233/376] region=(15,131) rows=1
+  L2 [234/376] region=(16,100) rows=48
+  L2 [249/376] region=(16,119) rows=3203
+  L2 [250/376] region=(16,120) rows=17675
+  L2 [251/376] region=(16,121) rows=81735
+  L2 [252/376] region=(16,122) rows=288508
+  L2 [253/376] region=(16,123) rows=14060
+  L2 [254/376] region=(16,124) rows=1557
+  L2 [257/376] region=(16,128) rows=8
+  L2 [258/376] region=(17,113) rows=20
+  L2 [263/376] region=(17,118) rows=280
+  L2 [264/376] region=(17,119) rows=1303
+  L2 [265/376] region=(17,120) rows=3382
+  L2 [266/376] region=(17,121) rows=38805
+  L2 [267/376] region=(17,122) rows=51105
+  L2 [268/376] region=(17,123) rows=232979
+  L2 [269/376] region=(17,124) rows=12867
+  L2 [273/376] region=(18,120) rows=1353
+  L2 [274/376] region=(18,121) rows=39983
+  L2 [275/376] region=(18,122) rows=19312
+  L2 [276/376] region=(18,123) rows=109581
+  L2 [277/376] region=(18,124) rows=27591
+  L2 [278/376] region=(18,125) rows=110
+  L2 [279/376] region=(18,127) rows=1
+  L2 [280/376] region=(18,130) rows=54
+  L2 [281/376] region=(19,120) rows=32
+  L2 [282/376] region=(19,121) rows=10543
+  L2 [283/376] region=(19,122) rows=5863
+  L2 [284/376] region=(19,123) rows=1753
+  L2 [285/376] region=(19,124) rows=6422
+  L2 [286/376] region=(19,125) rows=2011
+  L2 [287/376] region=(19,126) rows=346
+  L2 [288/376] region=(19,127) rows=274
+  L2 [289/376] region=(19,128) rows=36
+  L2 [290/376] region=(19,129) rows=84
+  L2 [291/376] region=(19,130) rows=237
+  L2 [292/376] region=(19,131) rows=3
+  L2 [293/376] region=(20,121) rows=336
+  L2 [294/376] region=(20,122) rows=2747
+  L2 [295/376] region=(20,123) rows=1008
+  L2 [296/376] region=(20,124) rows=2017
+  L2 [297/376] region=(20,125) rows=1704
+  L2 [298/376] region=(20,126) rows=1088
+  L2 [299/376] region=(20,127) rows=586
+  L2 [300/376] region=(20,128) rows=635
+  L2 [301/376] region=(20,129) rows=516
+  L2 [302/376] region=(20,130) rows=337
+  L2 [303/376] region=(20,131) rows=65
+  L2 [304/376] region=(20,132) rows=35
+  L2 [305/376] region=(20,135) rows=7
+  L2 [306/376] region=(21,122) rows=2525
+  L2 [307/376] region=(21,123) rows=709
+  L2 [308/376] region=(21,124) rows=1108
+  L2 [309/376] region=(21,125) rows=1514
+  L2 [310/376] region=(21,126) rows=834
+  L2 [311/376] region=(21,127) rows=86
+  L2 [312/376] region=(21,128) rows=50
+  L2 [313/376] region=(21,129) rows=263
+  L2 [314/376] region=(21,130) rows=98
+  L2 [315/376] region=(21,131) rows=19
+  L2 [316/376] region=(21,132) rows=5
+  L2 [317/376] region=(21,133) rows=23
+  L2 [318/376] region=(21,134) rows=8
+  L2 [319/376] region=(21,135) rows=2
+  L2 [320/376] region=(22,121) rows=1074
+  L2 [321/376] region=(22,122) rows=1648
+  L2 [322/376] region=(22,123) rows=403
+  L2 [323/376] region=(22,124) rows=783
+  L2 [324/376] region=(22,125) rows=435
+  L2 [325/376] region=(22,126) rows=411
+  L2 [326/376] region=(22,127) rows=269
+  L2 [327/376] region=(22,128) rows=755
+  L2 [328/376] region=(22,129) rows=113
+  L2 [329/376] region=(22,131) rows=1
+  L2 [330/376] region=(22,132) rows=12
+  L2 [331/376] region=(22,133) rows=4
+  L2 [332/376] region=(22,134) rows=12
+  L2 [333/376] region=(23,121) rows=29
+  L2 [334/376] region=(23,122) rows=59
+  L2 [335/376] region=(23,123) rows=3
+  L2 [336/376] region=(23,124) rows=55
+  L2 [337/376] region=(23,125) rows=52
+  L2 [338/376] region=(23,126) rows=30
+  L2 [339/376] region=(23,127) rows=47
+  L2 [340/376] region=(23,128) rows=470
+  L2 [341/376] region=(23,129) rows=283
+  L2 [342/376] region=(23,130) rows=90
+  L2 [343/376] region=(23,131) rows=31
+  L2 [344/376] region=(23,133) rows=1
+  L2 [345/376] region=(23,134) rows=15
+  L2 [346/376] region=(24,122) rows=15
+  L2 [347/376] region=(24,123) rows=68
+  L2 [348/376] region=(24,124) rows=327
+  L2 [349/376] region=(24,125) rows=15
+  L2 [350/376] region=(24,126) rows=23
+  L2 [351/376] region=(24,127) rows=3
+  L2 [352/376] region=(24,128) rows=8
+  L2 [353/376] region=(24,129) rows=18
+  L2 [354/376] region=(24,131) rows=67
+  L2 [355/376] region=(24,132) rows=35
+  L2 [356/376] region=(24,133) rows=14
+  L2 [357/376] region=(25,124) rows=116
+  L2 [359/376] region=(25,128) rows=1
+  L2 [360/376] region=(25,129) rows=51
+  L2 [361/376] region=(25,130) rows=3
+  L2 [362/376] region=(25,132) rows=2
+  L2 [363/376] region=(25,133) rows=141
+  L2 [364/376] region=(25,134) rows=11
+  L2 [366/376] region=(26,129) rows=2
+  L2 [367/376] region=(26,133) rows=59
+  L2 [368/376] region=(26,134) rows=81
+  L2 [375/376] region=(32,129) rows=0
+  L2 [376/376] region=(33,129) rows=15
+[L2] 2026-01 base_rows=381713 rows=6749936 out=data/layouts_daily/L2/year=2026/month=01 total_s=2901.147
+### [10:01:08] compact L2 daily -> compact
+Compacting L2 for 2026-01: data/layouts_daily → data/layout_compact
+  L2: 31 day(s) × 302 partition(s) → data/layout_compact
+  L2 [1/302] region_x=-1/region_y=113 rows=1  sources=1
+  L2 [2/302] region_x=-1/region_y=114 rows=2  sources=2
+  L2 [3/302] region_x=-1/region_y=115 rows=1  sources=1
+  L2 [4/302] region_x=-1/region_y=122 rows=1  sources=1
+  L2 [5/302] region_x=-1/region_y=127 rows=320  sources=6
+  L2 [6/302] region_x=-1/region_y=128 rows=334  sources=4
+  L2 [7/302] region_x=-10/region_y=119 rows=1  sources=1
+  L2 [8/302] region_x=-11/region_y=110 rows=1  sources=1
+  L2 [9/302] region_x=-11/region_y=127 rows=1  sources=1
+  L2 [10/302] region_x=-13/region_y=104 rows=1  sources=1
+  L2 [11/302] region_x=-14/region_y=100 rows=1  sources=1
+  L2 [12/302] region_x=-14/region_y=107 rows=1  sources=1
+  L2 [13/302] region_x=-17/region_y=119 rows=1  sources=1
+  L2 [14/302] region_x=-2/region_y=114 rows=3  sources=3
+  L2 [15/302] region_x=-2/region_y=119 rows=1  sources=1
+  L2 [16/302] region_x=-2/region_y=120 rows=2  sources=1
+  L2 [17/302] region_x=-2/region_y=121 rows=66  sources=1
+  L2 [18/302] region_x=-2/region_y=122 rows=29  sources=1
+  L2 [19/302] region_x=-2/region_y=125 rows=9  sources=1
+  L2 [20/302] region_x=-2/region_y=126 rows=3  sources=1
+  L2 [21/302] region_x=-21/region_y=93 rows=1  sources=1
+  L2 [22/302] region_x=-22/region_y=96 rows=1  sources=1
+  L2 [23/302] region_x=-3/region_y=114 rows=4  sources=4
+  L2 [24/302] region_x=-5/region_y=110 rows=1  sources=1
+  L2 [25/302] region_x=-6/region_y=116 rows=1  sources=1
+  L2 [26/302] region_x=-8/region_y=116 rows=1  sources=1
+  L2 [27/302] region_x=-9/region_y=115 rows=1  sources=1
+  L2 [28/302] region_x=-9/region_y=127 rows=2  sources=2
+  L2 [29/302] region_x=0/region_y=114 rows=2  sources=2
+  L2 [30/302] region_x=0/region_y=121 rows=82  sources=2
+  L2 [31/302] region_x=0/region_y=123 rows=49  sources=1
+  L2 [32/302] region_x=0/region_y=124 rows=19  sources=1
+  L2 [33/302] region_x=1/region_y=115 rows=1  sources=1
+  L2 [34/302] region_x=1/region_y=122 rows=4  sources=3
+  L2 [35/302] region_x=1/region_y=123 rows=24  sources=4
+  L2 [36/302] region_x=1/region_y=124 rows=9  sources=1
+  L2 [37/302] region_x=10/region_y=118 rows=2751  sources=18
+  L2 [38/302] region_x=10/region_y=119 rows=23166  sources=31
+  L2 [39/302] region_x=10/region_y=120 rows=42336  sources=31
+  L2 [40/302] region_x=10/region_y=121 rows=7233  sources=31
+  L2 [41/302] region_x=10/region_y=122 rows=13543  sources=31
+  L2 [42/302] region_x=10/region_y=123 rows=7996  sources=31
+  L2 [43/302] region_x=10/region_y=125 rows=6176  sources=31
+  L2 [44/302] region_x=10/region_y=126 rows=2512  sources=31
+  L2 [45/302] region_x=10/region_y=127 rows=132967  sources=31
+  L2 [46/302] region_x=10/region_y=128 rows=134319  sources=31
+  L2 [47/302] region_x=10/region_y=129 rows=13165  sources=31
+  L2 [48/302] region_x=10/region_y=130 rows=1139  sources=18
+  L2 [49/302] region_x=10/region_y=131 rows=82  sources=10
+  L2 [50/302] region_x=11/region_y=107 rows=47  sources=1
+  L2 [51/302] region_x=11/region_y=114 rows=1  sources=1
+  L2 [52/302] region_x=11/region_y=118 rows=530  sources=11
+  L2 [53/302] region_x=11/region_y=120 rows=104460  sources=31
+  L2 [54/302] region_x=11/region_y=121 rows=57299  sources=31
+  L2 [55/302] region_x=11/region_y=122 rows=27124  sources=31
+  L2 [56/302] region_x=11/region_y=123 rows=56108  sources=31
+  L2 [57/302] region_x=11/region_y=124 rows=42763  sources=31
+  L2 [58/302] region_x=11/region_y=125 rows=10112  sources=31
+  L2 [59/302] region_x=11/region_y=126 rows=21320  sources=31
+  L2 [60/302] region_x=11/region_y=127 rows=84359  sources=31
+  L2 [61/302] region_x=11/region_y=128 rows=218082  sources=31
+  L2 [62/302] region_x=11/region_y=129 rows=17039  sources=31
+  L2 [63/302] region_x=11/region_y=130 rows=2863  sources=18
+  L2 [64/302] region_x=11/region_y=131 rows=1402  sources=11
+  L2 [65/302] region_x=11/region_y=132 rows=85  sources=5
+  L2 [66/302] region_x=12/region_y=117 rows=2  sources=1
+  L2 [67/302] region_x=12/region_y=119 rows=9465  sources=31
+  L2 [68/302] region_x=12/region_y=120 rows=97699  sources=31
+  L2 [69/302] region_x=12/region_y=121 rows=250853  sources=31
+  L2 [70/302] region_x=12/region_y=122 rows=137339  sources=31
+  L2 [71/302] region_x=12/region_y=123 rows=147723  sources=31
+  L2 [72/302] region_x=12/region_y=124 rows=169343  sources=31
+  L2 [73/302] region_x=12/region_y=125 rows=55397  sources=31
+  L2 [74/302] region_x=12/region_y=126 rows=25192  sources=31
+  L2 [75/302] region_x=12/region_y=127 rows=257211  sources=31
+  L2 [76/302] region_x=12/region_y=128 rows=156747  sources=31
+  L2 [77/302] region_x=12/region_y=129 rows=13307  sources=31
+  L2 [78/302] region_x=12/region_y=130 rows=512  sources=9
+  L2 [79/302] region_x=12/region_y=131 rows=68  sources=7
+  L2 [80/302] region_x=13/region_y=115 rows=24  sources=1
+  L2 [81/302] region_x=13/region_y=119 rows=846  sources=24
+  L2 [82/302] region_x=13/region_y=120 rows=250327  sources=31
+  L2 [83/302] region_x=13/region_y=121 rows=50917  sources=31
+  L2 [84/302] region_x=13/region_y=122 rows=5263  sources=31
+  L2 [85/302] region_x=13/region_y=123 rows=7379  sources=31
+  L2 [86/302] region_x=13/region_y=124 rows=51935  sources=31
+  L2 [87/302] region_x=13/region_y=125 rows=185530  sources=31
+  L2 [88/302] region_x=13/region_y=126 rows=215651  sources=31
+  L2 [89/302] region_x=13/region_y=127 rows=260491  sources=31
+  L2 [90/302] region_x=13/region_y=128 rows=35626  sources=31
+  L2 [91/302] region_x=13/region_y=129 rows=160  sources=10
+  L2 [92/302] region_x=14/region_y=119 rows=474  sources=26
+  L2 [93/302] region_x=14/region_y=120 rows=133978  sources=31
+  L2 [94/302] region_x=14/region_y=121 rows=232093  sources=31
+  L2 [95/302] region_x=14/region_y=122 rows=108998  sources=31
+  L2 [96/302] region_x=14/region_y=123 rows=161106  sources=31
+  L2 [97/302] region_x=14/region_y=124 rows=182078  sources=31
+  L2 [98/302] region_x=14/region_y=125 rows=40961  sources=31
+  L2 [99/302] region_x=14/region_y=126 rows=3732  sources=31
+  L2 [100/302] region_x=14/region_y=129 rows=64  sources=8
+  L2 [101/302] region_x=14/region_y=130 rows=78  sources=7
+  L2 [102/302] region_x=15/region_y=120 rows=1676  sources=29
+  L2 [103/302] region_x=15/region_y=121 rows=164643  sources=31
+  L2 [104/302] region_x=15/region_y=122 rows=123993  sources=31
+  L2 [105/302] region_x=15/region_y=123 rows=3977  sources=31
+  L2 [106/302] region_x=15/region_y=124 rows=1  sources=1
+  L2 [107/302] region_x=15/region_y=130 rows=7  sources=3
+  L2 [108/302] region_x=15/region_y=131 rows=1  sources=1
+  L2 [109/302] region_x=16/region_y=100 rows=48  sources=1
+  L2 [110/302] region_x=16/region_y=119 rows=3203  sources=20
+  L2 [111/302] region_x=16/region_y=120 rows=17675  sources=31
+  L2 [112/302] region_x=16/region_y=121 rows=81735  sources=31
+  L2 [113/302] region_x=16/region_y=122 rows=288508  sources=31
+  L2 [114/302] region_x=16/region_y=123 rows=14060  sources=31
+  L2 [115/302] region_x=16/region_y=124 rows=1557  sources=29
+  L2 [116/302] region_x=16/region_y=128 rows=8  sources=3
+  L2 [117/302] region_x=17/region_y=113 rows=20  sources=1
+  L2 [118/302] region_x=17/region_y=118 rows=280  sources=7
+  L2 [119/302] region_x=17/region_y=119 rows=1303  sources=13
+  L2 [120/302] region_x=17/region_y=120 rows=3382  sources=29
+  L2 [121/302] region_x=17/region_y=121 rows=38805  sources=31
+  L2 [122/302] region_x=17/region_y=122 rows=51105  sources=31
+  L2 [123/302] region_x=17/region_y=123 rows=232979  sources=31
+  L2 [124/302] region_x=17/region_y=124 rows=12867  sources=31
+  L2 [125/302] region_x=18/region_y=120 rows=1353  sources=26
+  L2 [126/302] region_x=18/region_y=121 rows=39983  sources=31
+  L2 [127/302] region_x=18/region_y=122 rows=19312  sources=31
+  L2 [128/302] region_x=18/region_y=123 rows=109581  sources=31
+  L2 [129/302] region_x=18/region_y=124 rows=27591  sources=31
+  L2 [130/302] region_x=18/region_y=125 rows=110  sources=3
+  L2 [131/302] region_x=18/region_y=127 rows=1  sources=1
+  L2 [132/302] region_x=18/region_y=130 rows=54  sources=1
+  L2 [133/302] region_x=19/region_y=120 rows=32  sources=5
+  L2 [134/302] region_x=19/region_y=121 rows=10543  sources=31
+  L2 [135/302] region_x=19/region_y=122 rows=5863  sources=31
+  L2 [136/302] region_x=19/region_y=123 rows=1753  sources=29
+  L2 [137/302] region_x=19/region_y=124 rows=6422  sources=12
+  L2 [138/302] region_x=19/region_y=125 rows=2011  sources=3
+  L2 [139/302] region_x=19/region_y=126 rows=346  sources=3
+  L2 [140/302] region_x=19/region_y=127 rows=274  sources=3
+  L2 [141/302] region_x=19/region_y=128 rows=36  sources=1
+  L2 [142/302] region_x=19/region_y=129 rows=84  sources=2
+  L2 [143/302] region_x=19/region_y=130 rows=237  sources=1
+  L2 [144/302] region_x=19/region_y=131 rows=3  sources=1
+  L2 [145/302] region_x=2/region_y=114 rows=1  sources=1
+  L2 [146/302] region_x=2/region_y=115 rows=1  sources=1
+  L2 [147/302] region_x=2/region_y=116 rows=1  sources=1
+  L2 [148/302] region_x=2/region_y=121 rows=2  sources=1
+  L2 [149/302] region_x=2/region_y=122 rows=20  sources=2
+  L2 [150/302] region_x=2/region_y=123 rows=147  sources=8
+  L2 [151/302] region_x=2/region_y=124 rows=287  sources=19
+  L2 [152/302] region_x=2/region_y=125 rows=23  sources=8
+  L2 [153/302] region_x=20/region_y=121 rows=336  sources=7
+  L2 [154/302] region_x=20/region_y=122 rows=2747  sources=12
+  L2 [155/302] region_x=20/region_y=123 rows=1008  sources=4
+  L2 [156/302] region_x=20/region_y=124 rows=2017  sources=4
+  L2 [157/302] region_x=20/region_y=125 rows=1704  sources=2
+  L2 [158/302] region_x=20/region_y=126 rows=1088  sources=4
+  L2 [159/302] region_x=20/region_y=127 rows=586  sources=3
+  L2 [160/302] region_x=20/region_y=128 rows=635  sources=3
+  L2 [161/302] region_x=20/region_y=129 rows=516  sources=2
+  L2 [162/302] region_x=20/region_y=130 rows=337  sources=1
+  L2 [163/302] region_x=20/region_y=131 rows=65  sources=1
+  L2 [164/302] region_x=20/region_y=132 rows=35  sources=1
+  L2 [165/302] region_x=20/region_y=135 rows=7  sources=1
+  L2 [166/302] region_x=21/region_y=122 rows=2525  sources=4
+  L2 [167/302] region_x=21/region_y=123 rows=709  sources=2
+  L2 [168/302] region_x=21/region_y=124 rows=1108  sources=2
+  L2 [169/302] region_x=21/region_y=125 rows=1514  sources=2
+  L2 [170/302] region_x=21/region_y=126 rows=834  sources=2
+  L2 [171/302] region_x=21/region_y=127 rows=86  sources=1
+  L2 [172/302] region_x=21/region_y=128 rows=50  sources=2
+  L2 [173/302] region_x=21/region_y=129 rows=263  sources=3
+  L2 [174/302] region_x=21/region_y=130 rows=98  sources=2
+  L2 [175/302] region_x=21/region_y=131 rows=19  sources=1
+  L2 [176/302] region_x=21/region_y=132 rows=5  sources=1
+  L2 [177/302] region_x=21/region_y=133 rows=23  sources=1
+  L2 [178/302] region_x=21/region_y=134 rows=8  sources=1
+  L2 [179/302] region_x=21/region_y=135 rows=2  sources=1
+  L2 [180/302] region_x=22/region_y=121 rows=1074  sources=2
+  L2 [181/302] region_x=22/region_y=122 rows=1648  sources=2
+  L2 [182/302] region_x=22/region_y=123 rows=403  sources=3
+  L2 [183/302] region_x=22/region_y=124 rows=783  sources=3
+  L2 [184/302] region_x=22/region_y=125 rows=435  sources=2
+  L2 [185/302] region_x=22/region_y=126 rows=411  sources=2
+  L2 [186/302] region_x=22/region_y=127 rows=269  sources=2
+  L2 [187/302] region_x=22/region_y=128 rows=755  sources=2
+  L2 [188/302] region_x=22/region_y=129 rows=113  sources=1
+  L2 [189/302] region_x=22/region_y=131 rows=1  sources=1
+  L2 [190/302] region_x=22/region_y=132 rows=12  sources=1
+  L2 [191/302] region_x=22/region_y=133 rows=4  sources=1
+  L2 [192/302] region_x=22/region_y=134 rows=12  sources=1
+  L2 [193/302] region_x=23/region_y=121 rows=29  sources=2
+  L2 [194/302] region_x=23/region_y=122 rows=59  sources=3
+  L2 [195/302] region_x=23/region_y=123 rows=3  sources=2
+  L2 [196/302] region_x=23/region_y=124 rows=55  sources=2
+  L2 [197/302] region_x=23/region_y=125 rows=52  sources=1
+  L2 [198/302] region_x=23/region_y=126 rows=30  sources=1
+  L2 [199/302] region_x=23/region_y=127 rows=47  sources=1
+  L2 [200/302] region_x=23/region_y=128 rows=470  sources=2
+  L2 [201/302] region_x=23/region_y=129 rows=283  sources=1
+  L2 [202/302] region_x=23/region_y=130 rows=90  sources=1
+  L2 [203/302] region_x=23/region_y=131 rows=31  sources=1
+  L2 [204/302] region_x=23/region_y=133 rows=1  sources=1
+  L2 [205/302] region_x=23/region_y=134 rows=15  sources=1
+  L2 [206/302] region_x=24/region_y=122 rows=15  sources=2
+  L2 [207/302] region_x=24/region_y=123 rows=68  sources=2
+  L2 [208/302] region_x=24/region_y=124 rows=327  sources=3
+  L2 [209/302] region_x=24/region_y=125 rows=15  sources=1
+  L2 [210/302] region_x=24/region_y=126 rows=23  sources=1
+  L2 [211/302] region_x=24/region_y=127 rows=3  sources=1
+  L2 [212/302] region_x=24/region_y=128 rows=8  sources=1
+  L2 [213/302] region_x=24/region_y=129 rows=18  sources=1
+  L2 [214/302] region_x=24/region_y=131 rows=67  sources=1
+  L2 [215/302] region_x=24/region_y=132 rows=35  sources=1
+  L2 [216/302] region_x=24/region_y=133 rows=14  sources=1
+  L2 [217/302] region_x=25/region_y=124 rows=116  sources=1
+  L2 [218/302] region_x=25/region_y=128 rows=1  sources=1
+  L2 [219/302] region_x=25/region_y=129 rows=51  sources=1
+  L2 [220/302] region_x=25/region_y=130 rows=3  sources=1
+  L2 [221/302] region_x=25/region_y=132 rows=2  sources=1
+  L2 [222/302] region_x=25/region_y=133 rows=141  sources=1
+  L2 [223/302] region_x=25/region_y=134 rows=11  sources=1
+  L2 [224/302] region_x=26/region_y=129 rows=2  sources=1
+  L2 [225/302] region_x=26/region_y=133 rows=59  sources=1
+  L2 [226/302] region_x=26/region_y=134 rows=81  sources=1
+  L2 [227/302] region_x=3/region_y=114 rows=1  sources=1
+  L2 [228/302] region_x=3/region_y=116 rows=1  sources=1
+  L2 [229/302] region_x=3/region_y=121 rows=31  sources=2
+  L2 [230/302] region_x=3/region_y=122 rows=120  sources=17
+  L2 [231/302] region_x=3/region_y=123 rows=1569  sources=29
+  L2 [232/302] region_x=3/region_y=124 rows=11203  sources=31
+  L2 [233/302] region_x=3/region_y=125 rows=6804  sources=31
+  L2 [234/302] region_x=3/region_y=126 rows=26  sources=3
+  L2 [235/302] region_x=33/region_y=129 rows=15  sources=1
+  L2 [236/302] region_x=4/region_y=117 rows=1  sources=1
+  L2 [237/302] region_x=4/region_y=118 rows=1  sources=1
+  L2 [238/302] region_x=4/region_y=119 rows=1  sources=1
+  L2 [239/302] region_x=4/region_y=120 rows=13  sources=5
+  L2 [240/302] region_x=4/region_y=121 rows=85  sources=10
+  L2 [241/302] region_x=4/region_y=122 rows=5056  sources=31
+  L2 [242/302] region_x=4/region_y=123 rows=21345  sources=31
+  L2 [243/302] region_x=4/region_y=124 rows=18487  sources=31
+  L2 [244/302] region_x=4/region_y=125 rows=12145  sources=31
+  L2 [245/302] region_x=4/region_y=126 rows=618  sources=29
+  L2 [246/302] region_x=4/region_y=127 rows=1  sources=1
+  L2 [247/302] region_x=5/region_y=118 rows=6  sources=3
+  L2 [248/302] region_x=5/region_y=119 rows=126  sources=9
+  L2 [249/302] region_x=5/region_y=120 rows=173  sources=11
+  L2 [250/302] region_x=5/region_y=121 rows=1278  sources=17
+  L2 [251/302] region_x=5/region_y=122 rows=27890  sources=31
+  L2 [252/302] region_x=5/region_y=123 rows=21875  sources=31
+  L2 [253/302] region_x=5/region_y=124 rows=9150  sources=31
+  L2 [254/302] region_x=5/region_y=125 rows=6208  sources=31
+  L2 [255/302] region_x=5/region_y=126 rows=665  sources=23
+  L2 [256/302] region_x=5/region_y=127 rows=113  sources=4
+  L2 [257/302] region_x=6/region_y=118 rows=26  sources=3
+  L2 [258/302] region_x=6/region_y=119 rows=1231  sources=15
+  L2 [259/302] region_x=6/region_y=120 rows=1872  sources=14
+  L2 [260/302] region_x=6/region_y=121 rows=756  sources=13
+  L2 [261/302] region_x=6/region_y=122 rows=8897  sources=31
+  L2 [262/302] region_x=6/region_y=123 rows=17283  sources=31
+  L2 [263/302] region_x=6/region_y=124 rows=6881  sources=29
+  L2 [264/302] region_x=6/region_y=125 rows=1487  sources=18
+  L2 [265/302] region_x=6/region_y=126 rows=171  sources=13
+  L2 [266/302] region_x=6/region_y=127 rows=37  sources=5
+  L2 [267/302] region_x=6/region_y=128 rows=8  sources=2
+  L2 [268/302] region_x=7/region_y=111 rows=4  sources=1
+  L2 [269/302] region_x=7/region_y=118 rows=42  sources=4
+  L2 [270/302] region_x=7/region_y=119 rows=4312  sources=15
+  L2 [271/302] region_x=7/region_y=120 rows=10415  sources=31
+  L2 [272/302] region_x=7/region_y=121 rows=3681  sources=30
+  L2 [273/302] region_x=7/region_y=122 rows=15612  sources=31
+  L2 [274/302] region_x=7/region_y=123 rows=29929  sources=31
+  L2 [275/302] region_x=7/region_y=124 rows=33959  sources=31
+  L2 [276/302] region_x=7/region_y=125 rows=23363  sources=31
+  L2 [277/302] region_x=7/region_y=126 rows=6751  sources=31
+  L2 [278/302] region_x=7/region_y=127 rows=412  sources=20
+  L2 [279/302] region_x=7/region_y=128 rows=57  sources=7
+  L2 [280/302] region_x=8/region_y=118 rows=831  sources=13
+  L2 [281/302] region_x=8/region_y=119 rows=16135  sources=25
+  L2 [282/302] region_x=8/region_y=120 rows=15338  sources=31
+  L2 [283/302] region_x=8/region_y=121 rows=13544  sources=30
+  L2 [284/302] region_x=8/region_y=122 rows=38182  sources=31
+  L2 [285/302] region_x=8/region_y=123 rows=23647  sources=31
+  L2 [286/302] region_x=8/region_y=124 rows=37467  sources=31
+  L2 [287/302] region_x=8/region_y=125 rows=105095  sources=31
+  L2 [288/302] region_x=8/region_y=126 rows=144177  sources=31
+  L2 [289/302] region_x=8/region_y=127 rows=39402  sources=31
+  L2 [290/302] region_x=8/region_y=128 rows=1716  sources=31
+  L2 [291/302] region_x=9/region_y=117 rows=13  sources=2
+  L2 [292/302] region_x=9/region_y=118 rows=2577  sources=13
+  L2 [293/302] region_x=9/region_y=119 rows=21813  sources=31
+  L2 [294/302] region_x=9/region_y=120 rows=10068  sources=31
+  L2 [295/302] region_x=9/region_y=121 rows=30908  sources=31
+  L2 [296/302] region_x=9/region_y=122 rows=54958  sources=31
+  L2 [297/302] region_x=9/region_y=123 rows=34  sources=6
+  L2 [298/302] region_x=9/region_y=125 rows=15099  sources=31
+  L2 [299/302] region_x=9/region_y=126 rows=75990  sources=31
+  L2 [300/302] region_x=9/region_y=127 rows=179433  sources=31
+  L2 [301/302] region_x=9/region_y=128 rows=35917  sources=31
+  L2 [302/302] region_x=9/region_y=129 rows=496  sources=19
+  L2 2026-01 compacted: rows=6749936 out=data/layout_compact/L2/year=2026/month=01 total_s=28.163
+### [10:01:36] DONE
+daily   L2 files: 4154
+compact L2 files: 302

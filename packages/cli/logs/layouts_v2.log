@@ -1,0 +1,203 @@
+[layouts] file=aisdk-2026-01-01.parquet raw=14516337 base_segs=7704
+  hash       rows=11508 dir=data/clean/layouts/hash/aisdk-2026-01-01 time_s=1.204
+  spacesplit rows=81518 dir=data/clean/layouts/spacesplit/aisdk-2026-01-01 time_s=53.557
+  mest       rows=125694 dir=data/clean/layouts/mest/aisdk-2026-01-01 time_s=27.472
+  total_s=121.677
+[layouts] file=aisdk-2026-01-02.parquet raw=14282506 base_segs=9757
+  hash       rows=12579 dir=data/clean/layouts/hash/aisdk-2026-01-02 time_s=1.203
+  spacesplit rows=90783 dir=data/clean/layouts/spacesplit/aisdk-2026-01-02 time_s=86.776
+  mest       rows=133801 dir=data/clean/layouts/mest/aisdk-2026-01-02 time_s=23.435
+  total_s=151.584
+  [spacesplit] FAILED on aisdk-2026-01-03: InvalidInputException: Invalid Input Error: Instant sequence must have inclusive bounds
+[layouts] file=aisdk-2026-01-03.parquet raw=14176614 base_segs=10084
+  hash       rows=13284 dir=data/clean/layouts/hash/aisdk-2026-01-03 time_s=1.222
+  spacesplit rows=-1 dir=data/clean/layouts/spacesplit/aisdk-2026-01-03 time_s=FAILED
+  mest       rows=143387 dir=data/clean/layouts/mest/aisdk-2026-01-03 time_s=29.227
+  total_s=81.406
+  [mest] FAILED on aisdk-2026-01-04: OutOfMemoryException: Out of Memory Error: could not allocate block of size 2.2 MiB (9.3 GiB/9.3 GiB used)
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+[layouts] file=aisdk-2026-01-04.parquet raw=14931095 base_segs=10211
+  hash       rows=15227 dir=data/clean/layouts/hash/aisdk-2026-01-04 time_s=1.280
+  spacesplit rows=107546 dir=data/clean/layouts/spacesplit/aisdk-2026-01-04 time_s=61.770
+  mest       rows=-1 dir=data/clean/layouts/mest/aisdk-2026-01-04 time_s=FAILED
+  total_s=135.530
+[layouts] file=aisdk-2026-01-05.parquet raw=15276377 base_segs=11747
+  hash       rows=15910 dir=data/clean/layouts/hash/aisdk-2026-01-05 time_s=1.496
+  spacesplit rows=114908 dir=data/clean/layouts/spacesplit/aisdk-2026-01-05 time_s=70.611
+  mest       rows=183127 dir=data/clean/layouts/mest/aisdk-2026-01-05 time_s=30.411
+  total_s=152.911
+[layouts] file=aisdk-2026-01-06.parquet raw=15343848 base_segs=12025
+  hash       rows=15777 dir=data/clean/layouts/hash/aisdk-2026-01-06 time_s=1.305
+  spacesplit rows=115356 dir=data/clean/layouts/spacesplit/aisdk-2026-01-06 time_s=46.466
+  mest       rows=182727 dir=data/clean/layouts/mest/aisdk-2026-01-06 time_s=34.449
+  total_s=122.621
+[layouts] file=aisdk-2026-01-07.parquet raw=15018256 base_segs=10542
+  hash       rows=14075 dir=data/clean/layouts/hash/aisdk-2026-01-07 time_s=1.588
+  spacesplit rows=106026 dir=data/clean/layouts/spacesplit/aisdk-2026-01-07 time_s=45.185
+  mest       rows=165597 dir=data/clean/layouts/mest/aisdk-2026-01-07 time_s=32.086
+  total_s=130.890
+[layouts] file=aisdk-2026-01-08.parquet raw=15563767 base_segs=11144
+  hash       rows=16977 dir=data/clean/layouts/hash/aisdk-2026-01-08 time_s=1.374
+  spacesplit rows=118467 dir=data/clean/layouts/spacesplit/aisdk-2026-01-08 time_s=89.389
+  mest       rows=175569 dir=data/clean/layouts/mest/aisdk-2026-01-08 time_s=39.213
+  total_s=193.369
+  [spacesplit] FAILED on aisdk-2026-01-09: InvalidInputException: Invalid Input Error: Instant sequence must have inclusive bounds
+[layouts] file=aisdk-2026-01-09.parquet raw=15042136 base_segs=10062
+  hash       rows=14660 dir=data/clean/layouts/hash/aisdk-2026-01-09 time_s=1.730
+  spacesplit rows=-1 dir=data/clean/layouts/spacesplit/aisdk-2026-01-09 time_s=FAILED
+  mest       rows=160434 dir=data/clean/layouts/mest/aisdk-2026-01-09 time_s=42.716
+  total_s=119.467
+[layouts] file=aisdk-2026-01-10.parquet raw=15035211 base_segs=12246
+  hash       rows=18008 dir=data/clean/layouts/hash/aisdk-2026-01-10 time_s=1.384
+  spacesplit rows=119708 dir=data/clean/layouts/spacesplit/aisdk-2026-01-10 time_s=48.006
+  mest       rows=172610 dir=data/clean/layouts/mest/aisdk-2026-01-10 time_s=32.407
+  total_s=135.323
+[layouts] file=aisdk-2026-01-11.parquet raw=17148764 base_segs=16936
+  hash       rows=24274 dir=data/clean/layouts/hash/aisdk-2026-01-11 time_s=1.412
+  spacesplit rows=142998 dir=data/clean/layouts/spacesplit/aisdk-2026-01-11 time_s=69.396
+  mest       rows=204811 dir=data/clean/layouts/mest/aisdk-2026-01-11 time_s=38.706
+  total_s=183.949
+[layouts] file=aisdk-2026-01-12.parquet raw=16507554 base_segs=12684
+  hash       rows=17297 dir=data/clean/layouts/hash/aisdk-2026-01-12 time_s=1.559
+  spacesplit rows=115217 dir=data/clean/layouts/spacesplit/aisdk-2026-01-12 time_s=59.667
+  mest       rows=176224 dir=data/clean/layouts/mest/aisdk-2026-01-12 time_s=39.641
+  total_s=163.987
+  [spacesplit] FAILED on aisdk-2026-01-13: InvalidInputException: Invalid Input Error: Instant sequence must have inclusive bounds
+[layouts] file=aisdk-2026-01-13.parquet raw=15092869 base_segs=11214
+  hash       rows=14877 dir=data/clean/layouts/hash/aisdk-2026-01-13 time_s=1.544
+  spacesplit rows=-1 dir=data/clean/layouts/spacesplit/aisdk-2026-01-13 time_s=FAILED
+  mest       rows=170674 dir=data/clean/layouts/mest/aisdk-2026-01-13 time_s=32.382
+  total_s=100.415
+[layouts] file=aisdk-2026-01-14.parquet raw=16639247 base_segs=12268
+  hash       rows=18868 dir=data/clean/layouts/hash/aisdk-2026-01-14 time_s=1.392
+  spacesplit rows=139626 dir=data/clean/layouts/spacesplit/aisdk-2026-01-14 time_s=100.651
+  mest       rows=197469 dir=data/clean/layouts/mest/aisdk-2026-01-14 time_s=40.441
+  total_s=191.682
+  [spacesplit] FAILED on aisdk-2026-01-15: InvalidInputException: Invalid Input Error: Instant sequence must have inclusive bounds
+[layouts] file=aisdk-2026-01-15.parquet raw=16773395 base_segs=12499
+  hash       rows=18982 dir=data/clean/layouts/hash/aisdk-2026-01-15 time_s=2.023
+  spacesplit rows=-1 dir=data/clean/layouts/spacesplit/aisdk-2026-01-15 time_s=FAILED
+  mest       rows=188731 dir=data/clean/layouts/mest/aisdk-2026-01-15 time_s=41.674
+  total_s=120.986
+[layouts] file=aisdk-2026-01-16.parquet raw=16186904 base_segs=12084
+  hash       rows=17928 dir=data/clean/layouts/hash/aisdk-2026-01-16 time_s=1.672
+  spacesplit rows=124749 dir=data/clean/layouts/spacesplit/aisdk-2026-01-16 time_s=74.476
+  mest       rows=176348 dir=data/clean/layouts/mest/aisdk-2026-01-16 time_s=37.152
+  total_s=165.881
+[layouts] file=aisdk-2026-01-17.parquet raw=16818505 base_segs=14148
+  hash       rows=19574 dir=data/clean/layouts/hash/aisdk-2026-01-17 time_s=4.081
+  spacesplit rows=144163 dir=data/clean/layouts/spacesplit/aisdk-2026-01-17 time_s=78.893
+  mest       rows=200044 dir=data/clean/layouts/mest/aisdk-2026-01-17 time_s=40.890
+  total_s=202.665
+[layouts] file=aisdk-2026-01-18.parquet raw=16353998 base_segs=15335
+  hash       rows=21091 dir=data/clean/layouts/hash/aisdk-2026-01-18 time_s=1.451
+  spacesplit rows=143314 dir=data/clean/layouts/spacesplit/aisdk-2026-01-18 time_s=63.073
+  mest       rows=195669 dir=data/clean/layouts/mest/aisdk-2026-01-18 time_s=40.349
+  total_s=177.614
+[layouts] file=aisdk-2026-01-19.parquet raw=16737852 base_segs=16923
+  hash       rows=22473 dir=data/clean/layouts/hash/aisdk-2026-01-19 time_s=1.715
+  spacesplit rows=156616 dir=data/clean/layouts/spacesplit/aisdk-2026-01-19 time_s=85.506
+  mest       rows=215811 dir=data/clean/layouts/mest/aisdk-2026-01-19 time_s=42.565
+  total_s=207.252
+[layouts] file=aisdk-2026-01-20.parquet raw=17630815 base_segs=20145
+  hash       rows=25310 dir=data/clean/layouts/hash/aisdk-2026-01-20 time_s=2.022
+  spacesplit rows=166376 dir=data/clean/layouts/spacesplit/aisdk-2026-01-20 time_s=112.699
+  mest       rows=232420 dir=data/clean/layouts/mest/aisdk-2026-01-20 time_s=50.794
+  total_s=249.927
+[layouts] file=aisdk-2026-01-21.parquet raw=17230631 base_segs=17720
+  hash       rows=23391 dir=data/clean/layouts/hash/aisdk-2026-01-21 time_s=1.536
+  spacesplit rows=151474 dir=data/clean/layouts/spacesplit/aisdk-2026-01-21 time_s=66.264
+  mest       rows=212503 dir=data/clean/layouts/mest/aisdk-2026-01-21 time_s=43.504
+  total_s=191.025
+  [spacesplit] FAILED on aisdk-2026-01-22: InvalidInputException: Invalid Input Error: Instant sequence must have inclusive bounds
+[layouts] file=aisdk-2026-01-22.parquet raw=15329437 base_segs=11685
+  hash       rows=16422 dir=data/clean/layouts/hash/aisdk-2026-01-22 time_s=1.661
+  spacesplit rows=-1 dir=data/clean/layouts/spacesplit/aisdk-2026-01-22 time_s=FAILED
+  mest       rows=175045 dir=data/clean/layouts/mest/aisdk-2026-01-22 time_s=37.123
+  total_s=98.920
+[layouts] file=aisdk-2026-01-23.parquet raw=15067228 base_segs=12089
+  hash       rows=17022 dir=data/clean/layouts/hash/aisdk-2026-01-23 time_s=1.670
+  spacesplit rows=116039 dir=data/clean/layouts/spacesplit/aisdk-2026-01-23 time_s=103.857
+  mest       rows=167208 dir=data/clean/layouts/mest/aisdk-2026-01-23 time_s=30.718
+  total_s=223.396
+[layouts] file=aisdk-2026-01-24.parquet raw=15200424 base_segs=10461
+  hash       rows=17381 dir=data/clean/layouts/hash/aisdk-2026-01-24 time_s=1.439
+  spacesplit rows=121159 dir=data/clean/layouts/spacesplit/aisdk-2026-01-24 time_s=56.933
+  mest       rows=170122 dir=data/clean/layouts/mest/aisdk-2026-01-24 time_s=33.245
+  total_s=137.510
+[layouts] file=aisdk-2026-01-25.parquet raw=15681521 base_segs=12528
+  hash       rows=18526 dir=data/clean/layouts/hash/aisdk-2026-01-25 time_s=1.420
+  spacesplit rows=133163 dir=data/clean/layouts/spacesplit/aisdk-2026-01-25 time_s=71.612
+  mest       rows=186051 dir=data/clean/layouts/mest/aisdk-2026-01-25 time_s=41.557
+  total_s=162.446
+[layouts] file=aisdk-2026-01-26.parquet raw=15071507 base_segs=12136
+  hash       rows=26172 dir=data/clean/layouts/hash/aisdk-2026-01-26 time_s=1.625
+  spacesplit rows=123834 dir=data/clean/layouts/spacesplit/aisdk-2026-01-26 time_s=68.345
+  mest       rows=185497 dir=data/clean/layouts/mest/aisdk-2026-01-26 time_s=47.466
+  total_s=171.643
+[layouts] file=aisdk-2026-01-27.parquet raw=15177071 base_segs=11613
+  hash       rows=15550 dir=data/clean/layouts/hash/aisdk-2026-01-27 time_s=2.243
+  spacesplit rows=111598 dir=data/clean/layouts/spacesplit/aisdk-2026-01-27 time_s=93.757
+  mest       rows=174802 dir=data/clean/layouts/mest/aisdk-2026-01-27 time_s=40.534
+  total_s=221.662
+  [spacesplit] FAILED on aisdk-2026-01-28: InvalidInputException: Invalid Input Error: Instant sequence must have inclusive bounds
+[layouts] file=aisdk-2026-01-28.parquet raw=14935907 base_segs=11417
+  hash       rows=17376 dir=data/clean/layouts/hash/aisdk-2026-01-28 time_s=2.851
+  spacesplit rows=-1 dir=data/clean/layouts/spacesplit/aisdk-2026-01-28 time_s=FAILED
+  mest       rows=172506 dir=data/clean/layouts/mest/aisdk-2026-01-28 time_s=37.436
+  total_s=123.546
+[layouts] file=aisdk-2026-01-29.parquet raw=15651605 base_segs=11861
+  hash       rows=18244 dir=data/clean/layouts/hash/aisdk-2026-01-29 time_s=1.505
+  spacesplit rows=123493 dir=data/clean/layouts/spacesplit/aisdk-2026-01-29 time_s=91.117
+  mest       rows=184607 dir=data/clean/layouts/mest/aisdk-2026-01-29 time_s=43.899
+  total_s=194.613
+[layouts] file=aisdk-2026-01-30.parquet raw=15453854 base_segs=10868
+  hash       rows=15256 dir=data/clean/layouts/hash/aisdk-2026-01-30 time_s=1.908
+  spacesplit rows=114483 dir=data/clean/layouts/spacesplit/aisdk-2026-01-30 time_s=67.629
+  mest       rows=175514 dir=data/clean/layouts/mest/aisdk-2026-01-30 time_s=43.146
+  total_s=182.701
+[layouts] file=aisdk-2026-01-31.parquet raw=15437845 base_segs=9802
+  hash       rows=14670 dir=data/clean/layouts/hash/aisdk-2026-01-31 time_s=1.851
+  spacesplit rows=112921 dir=data/clean/layouts/spacesplit/aisdk-2026-01-31 time_s=60.794
+  mest       rows=173274 dir=data/clean/layouts/mest/aisdk-2026-01-31 time_s=45.431
+  total_s=163.898
+[layouts] processed 31 day(s); 7 with errors. Report: data/clean/layouts/failed_days.json
+Wrote layouts under: data/clean/layouts  approaches=['hash', 'spacesplit', 'mest']
+  hash=    11,508  spacesplit=    81,518  mest=   125,694  (base_segs=7,704)
+  hash=    12,579  spacesplit=    90,783  mest=   133,801  (base_segs=9,757)
+  hash=    13,284  spacesplit=        -1  mest=   143,387  (base_segs=10,084)
+  hash=    15,227  spacesplit=   107,546  mest=        -1  (base_segs=10,211)
+  hash=    15,910  spacesplit=   114,908  mest=   183,127  (base_segs=11,747)
+  hash=    15,777  spacesplit=   115,356  mest=   182,727  (base_segs=12,025)
+  hash=    14,075  spacesplit=   106,026  mest=   165,597  (base_segs=10,542)
+  hash=    16,977  spacesplit=   118,467  mest=   175,569  (base_segs=11,144)
+  hash=    14,660  spacesplit=        -1  mest=   160,434  (base_segs=10,062)
+  hash=    18,008  spacesplit=   119,708  mest=   172,610  (base_segs=12,246)
+  hash=    24,274  spacesplit=   142,998  mest=   204,811  (base_segs=16,936)
+  hash=    17,297  spacesplit=   115,217  mest=   176,224  (base_segs=12,684)
+  hash=    14,877  spacesplit=        -1  mest=   170,674  (base_segs=11,214)
+  hash=    18,868  spacesplit=   139,626  mest=   197,469  (base_segs=12,268)
+  hash=    18,982  spacesplit=        -1  mest=   188,731  (base_segs=12,499)
+  hash=    17,928  spacesplit=   124,749  mest=   176,348  (base_segs=12,084)
+  hash=    19,574  spacesplit=   144,163  mest=   200,044  (base_segs=14,148)
+  hash=    21,091  spacesplit=   143,314  mest=   195,669  (base_segs=15,335)
+  hash=    22,473  spacesplit=   156,616  mest=   215,811  (base_segs=16,923)
+  hash=    25,310  spacesplit=   166,376  mest=   232,420  (base_segs=20,145)
+  hash=    23,391  spacesplit=   151,474  mest=   212,503  (base_segs=17,720)
+  hash=    16,422  spacesplit=        -1  mest=   175,045  (base_segs=11,685)
+  hash=    17,022  spacesplit=   116,039  mest=   167,208  (base_segs=12,089)
+  hash=    17,381  spacesplit=   121,159  mest=   170,122  (base_segs=10,461)
+  hash=    18,526  spacesplit=   133,163  mest=   186,051  (base_segs=12,528)
+  hash=    26,172  spacesplit=   123,834  mest=   185,497  (base_segs=12,136)
+  hash=    15,550  spacesplit=   111,598  mest=   174,802  (base_segs=11,613)
+  hash=    17,376  spacesplit=        -1  mest=   172,506  (base_segs=11,417)
+  hash=    18,244  spacesplit=   123,493  mest=   184,607  (base_segs=11,861)
+  hash=    15,256  spacesplit=   114,483  mest=   175,514  (base_segs=10,868)
+  hash=    14,670  spacesplit=   112,921  mest=   173,274  (base_segs=9,802)
+     6555.82 real      5284.92 user      1174.38 sys

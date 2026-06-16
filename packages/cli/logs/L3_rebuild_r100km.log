@@ -1,0 +1,526 @@
+### [08:48:29] build L3 daily @ 100km (segs/box=16, matches original)
+Building L3 for 2026-01 from L0=data/L0 → data/layouts_daily
+  L3: 140 candidate region cells × 31 day(s) (granularity=daily)
+  L3 [1/140] region=(-11,46) rows=1
+  L3 [2/140] region=(-11,48) rows=1
+  L3 [3/140] region=(-9,59) rows=1
+  L3 [4/140] region=(-7,50) rows=1
+  L3 [5/140] region=(-7,52) rows=1
+  L3 [6/140] region=(-7,53) rows=1
+  L3 [7/140] region=(-6,55) rows=1
+  L3 [8/140] region=(-6,63) rows=1
+  L3 [9/140] region=(-5,57) rows=1
+  L3 [10/140] region=(-5,59) rows=1
+  L3 [11/140] region=(-5,63) rows=2
+  L3 [12/140] region=(-4,58) rows=1
+  L3 [13/140] region=(-3,55) rows=1
+  L3 [14/140] region=(-3,58) rows=1
+  L3 [15/140] region=(-2,57) rows=4
+  L3 [16/140] region=(-1,56) rows=1
+  L3 [17/140] region=(-1,57) rows=6
+  L3 [18/140] region=(-1,59) rows=1
+  L3 [19/140] region=(-1,60) rows=4
+  L3 [20/140] region=(-1,61) rows=2
+  L3 [21/140] region=(-1,62) rows=1
+  L3 [22/140] region=(-1,63) rows=12
+  L3 [23/140] region=(-1,64) rows=9
+  L3 [24/140] region=(0,57) rows=3
+  L3 [25/140] region=(0,60) rows=2
+  L3 [26/140] region=(0,61) rows=21
+  L3 [27/140] region=(0,62) rows=4
+  L3 [30/140] region=(1,57) rows=3
+  L3 [31/140] region=(1,58) rows=2
+  L3 [32/140] region=(1,60) rows=41
+  L3 [33/140] region=(1,61) rows=1149
+  L3 [34/140] region=(1,62) rows=19403
+  L3 [35/140] region=(1,63) rows=15
+  L3 [37/140] region=(2,58) rows=1
+  L3 [38/140] region=(2,59) rows=62
+  L3 [39/140] region=(2,60) rows=825
+  L3 [40/140] region=(2,61) rows=100504
+  L3 [41/140] region=(2,62) rows=56073
+  L3 [42/140] region=(2,63) rows=996
+  L3 [44/140] region=(3,55) rows=3
+  L3 [45/140] region=(3,59) rows=3989
+  L3 [46/140] region=(3,60) rows=14720
+  L3 [47/140] region=(3,61) rows=64793
+  L3 [48/140] region=(3,62) rows=38745
+  L3 [49/140] region=(3,63) rows=3722
+  L3 [50/140] region=(3,64) rows=33
+  L3 [51/140] region=(4,58) rows=9
+  L3 [52/140] region=(4,59) rows=26654
+  L3 [53/140] region=(4,60) rows=160071
+  L3 [54/140] region=(4,61) rows=248428
+  L3 [55/140] region=(4,62) rows=237228
+  L3 [56/140] region=(4,63) rows=469251
+  L3 [57/140] region=(4,64) rows=34887
+  L3 [58/140] region=(5,53) rows=1
+  L3 [62/140] region=(5,57) rows=1
+  L3 [64/140] region=(5,59) rows=16954
+  L3 [65/140] region=(5,60) rows=245315
+  L3 [66/140] region=(5,61) rows=167561
+  L3 [67/140] region=(5,62) rows=113392
+  L3 [68/140] region=(5,63) rows=342013
+  L3 [69/140] region=(5,64) rows=580455
+  L3 [70/140] region=(5,65) rows=2882
+  L3 [71/140] region=(5,66) rows=44
+  L3 [72/140] region=(6,57) rows=1
+  L3 [73/140] region=(6,58) rows=2
+  L3 [74/140] region=(6,59) rows=4790
+  L3 [75/140] region=(6,60) rows=766197
+  L3 [76/140] region=(6,61) rows=369702
+  L3 [77/140] region=(6,62) rows=584669
+L3 FAILED 2026-01: OutOfMemoryException: Out of Memory Error: could not allocate
+block of size 512.0 KiB (12.7 GiB/12.7 GiB used)
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /Users/ngochoapham/Thesis/ver2/packages/cli/src/lakehouse/pipeline.py:200 in │
+│ build_layout                                                                 │
+│                                                                              │
+│   197 │   │   f"→ {layout_root}[/cyan]"                                      │
+│   198 │   )                                                                  │
+│   199 │   try:                                                               │
+│ ❱ 200 │   │   build_layout_month(                                            │
+│   201 │   │   │   layout=layout, year=year, month=mo,                        │
+│   202 │   │   │   l0_root=l0_root, layout_root=layout_root,                  │
+│   203 │   │   │   params=params, layout_params=layout_params, runtime=runtim │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │   granularity = 'daily'                                                  │ │
+│ │        l0_dir = None                                                     │ │
+│ │       l0_root = PosixPath('data/L0')                                     │ │
+│ │        layout = 'L3'                                                     │ │
+│ │    layout_dir = 'data/layouts_daily'                                     │ │
+│ │ layout_params = LayoutParams(                                            │ │
+│ │                 │   num_shards=16,                                       │ │
+│ │                 │   tile_size_m=500.0,                                   │ │
+│ │                 │   region_size_m=100000.0,                              │ │
+│ │                 │   segs_per_box=16,                                     │ │
+│ │                 │   time_bin='1 hour',                                   │ │
+│ │                 │   granularity='daily'                                  │ │
+│ │                 )                                                        │ │
+│ │   layout_root = PosixPath('data/layouts_daily')                          │ │
+│ │  memory_limit = None                                                     │ │
+│ │            mo = 1                                                        │ │
+│ │         month = '2026-01'                                                │ │
+│ │    num_shards = 16                                                       │ │
+│ │        params = PipelineParams(                                          │ │
+│ │                 │   metric_srid='+proj=utm +zone=32 +datum=WGS84         │ │
+│ │                 +units=m +no_defs',                                      │ │
+│ │                 │   metric_epsg=32632,                                   │ │
+│ │                 │   time_gap_seconds=600,                                │ │
+│ │                 │   max_speed_knots=100.0,                               │ │
+│ │                 │   max_implied_speed_knots=100.0,                       │ │
+│ │                 │   stop_speed_knots=1.0,                                │ │
+│ │                 │   min_stop_seconds=300,                                │ │
+│ │                 │   min_motion_points=3,                                 │ │
+│ │                 │   max_vessel_outlier_pct=0.5,                          │ │
+│ │                 │   study_area_lonlat_bbox=(                             │ │
+│ │                 │   │   -16.1,                                           │ │
+│ │                 │   │   32.88,                                           │ │
+│ │                 │   │   40.18,                                           │ │
+│ │                 │   │   84.17                                            │ │
+│ │                 │   )                                                    │ │
+│ │                 )                                                        │ │
+│ │ region_size_m = 100000.0                                                 │ │
+│ │       runtime = DuckdbRuntime(                                           │ │
+│ │                 │                                                        │ │
+│ │                 extension_path='/Users/ngochoapham/Thesis/MobilityDuck/… │ │
+│ │                 │   extension_name='mobilityduck',                       │ │
+│ │                 │   allow_unsigned_extensions=True,                      │ │
+│ │                 │   memory_limit=None,                                   │ │
+│ │                 │   threads=2,                                           │ │
+│ │                 │   max_temp_directory_size=None,                        │ │
+│ │                 │   spill_dir=None                                       │ │
+│ │                 )                                                        │ │
+│ │  segs_per_box = 16                                                       │ │
+│ │      settings = Settings(                                                │ │
+│ │                 │   mobilityduck=MobilityDuckSettings(                   │ │
+│ │                 │   │   extension_name='mobilityduck',                   │ │
+│ │                 │   │                                                    │ │
+│ │                 extension_path='/Users/ngochoapham/Thesis/MobilityDuck/… │ │
+│ │                 │   │   allow_unsigned_extensions=True                   │ │
+│ │                 │   ),                                                   │ │
+│ │                 │   pipeline=PipelineSettings(                           │ │
+│ │                 │   │   raw_dir=PosixPath('data/raw'),                   │ │
+│ │                 │   │   l0_dir=PosixPath('data/L0'),                     │ │
+│ │                 │   │   layout_dir=PosixPath('data/layouts'),            │ │
+│ │                 │   │   metric_srid='+proj=utm +zone=32 +datum=WGS84     │ │
+│ │                 +units=m +no_defs',                                      │ │
+│ │                 │   │   metric_epsg=32632,                               │ │
+│ │                 │   │   time_gap_seconds=600,                            │ │
+│ │                 │   │   max_speed_knots=100.0,                           │ │
+│ │                 │   │   max_implied_speed_knots=100.0,                   │ │
+│ │                 │   │   stop_speed_knots=1.0,                            │ │
+│ │                 │   │   min_stop_seconds=300,                            │ │
+│ │                 │   │   min_motion_points=3,                             │ │
+│ │                 │   │   max_vessel_outlier_pct=0.5,                      │ │
+│ │                 │   │   study_area_lonlat_bbox=(                         │ │
+│ │                 │   │   │   -16.1,                                       │ │
+│ │                 │   │   │   32.88,                                       │ │
+│ │                 │   │   │   40.18,                                       │ │
+│ │                 │   │   │   84.17                                        │ │
+│ │                 │   │   ),                                               │ │
+│ │                 │   │   duckdb_memory_limit=None,                        │ │
+│ │                 │   │   duckdb_temp_directory=None,                      │ │
+│ │                 │   │   duckdb_max_temp_directory_size=None,             │ │
+│ │                 │   │   duckdb_threads=2                                 │ │
+│ │                 │   )                                                    │ │
+│ │                 )                                                        │ │
+│ │   tile_size_m = 500.0                                                    │ │
+│ │      time_bin = '1 hour'                                                 │ │
+│ │          year = 2026                                                     │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /Users/ngochoapham/Thesis/ver2/packages/pipeline/src/lakehouse_pipeline/runn │
+│ er.py:169 in build_layout_month                                              │
+│                                                                              │
+│   166 │   │   │   │   │   threads=runtime.threads,                           │
+│   167 │   │   │   │   │   max_temp_directory_size=runtime.max_temp_directory │
+│   168 │   │   │   │   )                                                      │
+│ ❱ 169 │   │   │   rows = write_l3_mest(                                      │
+│   170 │   │   │   │   con, root=layout_root, year=year, month=month,         │
+│   171 │   │   │   │   segs_per_box=layout_params.segs_per_box,               │
+│   172 │   │   │   │   region_size_m=layout_params.region_size_m,             │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │     base_rows = 381713                                                   │ │
+│ │           con = <_duckdb.DuckDBPyConnection object at 0x10932d630>       │ │
+│ │          days = [                                                        │ │
+│ │                 │   (                                                    │ │
+│ │                 │   │   datetime.date(2026, 1, 1),                       │ │
+│ │                 │   │                                                    │ │
+│ │                 PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-01… │ │
+│ │                 │   ),                                                   │ │
+│ │                 │   (                                                    │ │
+│ │                 │   │   datetime.date(2026, 1, 2),                       │ │
+│ │                 │   │                                                    │ │
+│ │                 PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-02… │ │
+│ │                 │   ),                                                   │ │
+│ │                 │   (                                                    │ │
+│ │                 │   │   datetime.date(2026, 1, 3),                       │ │
+│ │                 │   │                                                    │ │
+│ │                 PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-03… │ │
+│ │                 │   ),                                                   │ │
+│ │                 │   (                                                    │ │
+│ │                 │   │   datetime.date(2026, 1, 4),                       │ │
+│ │                 │   │                                                    │ │
+│ │                 PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-04… │ │
+│ │                 │   ),                                                   │ │
+│ │                 │   (                                                    │ │
+│ │                 │   │   datetime.date(2026, 1, 5),                       │ │
+│ │                 │   │                                                    │ │
+│ │                 PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-05… │ │
+│ │                 │   ),                                                   │ │
+│ │                 │   (                                                    │ │
+│ │                 │   │   datetime.date(2026, 1, 6),                       │ │
+│ │                 │   │                                                    │ │
+│ │                 PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-06… │ │
+│ │                 │   ),                                                   │ │
+│ │                 │   (                                                    │ │
+│ │                 │   │   datetime.date(2026, 1, 7),                       │ │
+│ │                 │   │                                                    │ │
+│ │                 PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-07… │ │
+│ │                 │   ),                                                   │ │
+│ │                 │   (                                                    │ │
+│ │                 │   │   datetime.date(2026, 1, 8),                       │ │
+│ │                 │   │                                                    │ │
+│ │                 PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-08… │ │
+│ │                 │   ),                                                   │ │
+│ │                 │   (                                                    │ │
+│ │                 │   │   datetime.date(2026, 1, 9),                       │ │
+│ │                 │   │                                                    │ │
+│ │                 PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-09… │ │
+│ │                 │   ),                                                   │ │
+│ │                 │   (                                                    │ │
+│ │                 │   │   datetime.date(2026, 1, 10),                      │ │
+│ │                 │   │                                                    │ │
+│ │                 PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-10… │ │
+│ │                 │   ),                                                   │ │
+│ │                 │   ... +21                                              │ │
+│ │                 ]                                                        │ │
+│ │          glob = 'data/L0/L0/year=2026/month=01/*.parquet'                │ │
+│ │       l0_root = PosixPath('data/L0')                                     │ │
+│ │        layout = 'L3'                                                     │ │
+│ │ layout_params = LayoutParams(                                            │ │
+│ │                 │   num_shards=16,                                       │ │
+│ │                 │   tile_size_m=500.0,                                   │ │
+│ │                 │   region_size_m=100000.0,                              │ │
+│ │                 │   segs_per_box=16,                                     │ │
+│ │                 │   time_bin='1 hour',                                   │ │
+│ │                 │   granularity='daily'                                  │ │
+│ │                 )                                                        │ │
+│ │   layout_root = PosixPath('data/layouts_daily')                          │ │
+│ │         month = 1                                                        │ │
+│ │        params = PipelineParams(                                          │ │
+│ │                 │   metric_srid='+proj=utm +zone=32 +datum=WGS84         │ │
+│ │                 +units=m +no_defs',                                      │ │
+│ │                 │   metric_epsg=32632,                                   │ │
+│ │                 │   time_gap_seconds=600,                                │ │
+│ │                 │   max_speed_knots=100.0,                               │ │
+│ │                 │   max_implied_speed_knots=100.0,                       │ │
+│ │                 │   stop_speed_knots=1.0,                                │ │
+│ │                 │   min_stop_seconds=300,                                │ │
+│ │                 │   min_motion_points=3,                                 │ │
+│ │                 │   max_vessel_outlier_pct=0.5,                          │ │
+│ │                 │   study_area_lonlat_bbox=(                             │ │
+│ │                 │   │   -16.1,                                           │ │
+│ │                 │   │   32.88,                                           │ │
+│ │                 │   │   40.18,                                           │ │
+│ │                 │   │   84.17                                            │ │
+│ │                 │   )                                                    │ │
+│ │                 )                                                        │ │
+│ │       runtime = DuckdbRuntime(                                           │ │
+│ │                 │                                                        │ │
+│ │                 extension_path='/Users/ngochoapham/Thesis/MobilityDuck/… │ │
+│ │                 │   extension_name='mobilityduck',                       │ │
+│ │                 │   allow_unsigned_extensions=True,                      │ │
+│ │                 │   memory_limit=None,                                   │ │
+│ │                 │   threads=2,                                           │ │
+│ │                 │   max_temp_directory_size=None,                        │ │
+│ │                 │   spill_dir=None                                       │ │
+│ │                 )                                                        │ │
+│ │         spill = PosixPath('data/layouts_daily/.spill')                   │ │
+│ │            t0 = 404680.617914541                                         │ │
+│ │          year = 2026                                                     │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /Users/ngochoapham/Thesis/ver2/packages/pipeline/src/lakehouse_pipeline/layo │
+│ uts.py:644 in write_l3_mest                                                  │
+│                                                                              │
+│   641 │   │   │   │   cell_conn_factory=cell_conn_factory,                   │
+│   642 │   │   │   )                                                          │
+│   643 │   │   else:                                                          │
+│ ❱ 644 │   │   │   cell_rows = _build_cell_daily(                             │
+│   645 │   │   │   │   con, root=root, layout="L3", rx=rx, ry=ry,             │
+│   646 │   │   │   │   l0_days=l0_days, select_sql=select_sql,                │
+│   647 │   │   │   │   cell_conn_factory=cell_conn_factory,                   │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │             _ = PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-31… │ │
+│ │           box = (600000.0, 700000.0, 6300000.0, 6400000.0)               │ │
+│ │     cell_rows = 584669                                                   │ │
+│ │         cells = [                                                        │ │
+│ │                 │   (-11, 46),                                           │ │
+│ │                 │   (-11, 48),                                           │ │
+│ │                 │   (-9, 59),                                            │ │
+│ │                 │   (-7, 50),                                            │ │
+│ │                 │   (-7, 52),                                            │ │
+│ │                 │   (-7, 53),                                            │ │
+│ │                 │   (-6, 55),                                            │ │
+│ │                 │   (-6, 63),                                            │ │
+│ │                 │   (-5, 57),                                            │ │
+│ │                 │   (-5, 59),                                            │ │
+│ │                 │   ... +130                                             │ │
+│ │                 ]                                                        │ │
+│ │           con = <_duckdb.DuckDBPyConnection object at 0x10932d630>       │ │
+│ │           day = datetime.date(2026, 1, 31)                               │ │
+│ │   granularity = 'daily'                                                  │ │
+│ │             i = 78                                                       │ │
+│ │       l0_days = [                                                        │ │
+│ │                 │   (                                                    │ │
+│ │                 │   │   datetime.date(2026, 1, 1),                       │ │
+│ │                 │   │                                                    │ │
+│ │                 PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-01… │ │
+│ │                 │   ),                                                   │ │
+│ │                 │   (                                                    │ │
+│ │                 │   │   datetime.date(2026, 1, 2),                       │ │
+│ │                 │   │                                                    │ │
+│ │                 PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-02… │ │
+│ │                 │   ),                                                   │ │
+│ │                 │   (                                                    │ │
+│ │                 │   │   datetime.date(2026, 1, 3),                       │ │
+│ │                 │   │                                                    │ │
+│ │                 PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-03… │ │
+│ │                 │   ),                                                   │ │
+│ │                 │   (                                                    │ │
+│ │                 │   │   datetime.date(2026, 1, 4),                       │ │
+│ │                 │   │                                                    │ │
+│ │                 PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-04… │ │
+│ │                 │   ),                                                   │ │
+│ │                 │   (                                                    │ │
+│ │                 │   │   datetime.date(2026, 1, 5),                       │ │
+│ │                 │   │                                                    │ │
+│ │                 PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-05… │ │
+│ │                 │   ),                                                   │ │
+│ │                 │   (                                                    │ │
+│ │                 │   │   datetime.date(2026, 1, 6),                       │ │
+│ │                 │   │                                                    │ │
+│ │                 PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-06… │ │
+│ │                 │   ),                                                   │ │
+│ │                 │   (                                                    │ │
+│ │                 │   │   datetime.date(2026, 1, 7),                       │ │
+│ │                 │   │                                                    │ │
+│ │                 PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-07… │ │
+│ │                 │   ),                                                   │ │
+│ │                 │   (                                                    │ │
+│ │                 │   │   datetime.date(2026, 1, 8),                       │ │
+│ │                 │   │                                                    │ │
+│ │                 PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-08… │ │
+│ │                 │   ),                                                   │ │
+│ │                 │   (                                                    │ │
+│ │                 │   │   datetime.date(2026, 1, 9),                       │ │
+│ │                 │   │                                                    │ │
+│ │                 PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-09… │ │
+│ │                 │   ),                                                   │ │
+│ │                 │   (                                                    │ │
+│ │                 │   │   datetime.date(2026, 1, 10),                      │ │
+│ │                 │   │                                                    │ │
+│ │                 PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-10… │ │
+│ │                 │   ),                                                   │ │
+│ │                 │   ... +21                                              │ │
+│ │                 ]                                                        │ │
+│ │         month = 1                                                        │ │
+│ │    motion_sql = "\n        SELECT\n            bs.mmsi,\n            'in │ │
+│ │                 motion'                    "+2437                        │ │
+│ │        params = PipelineParams(                                          │ │
+│ │                 │   metric_srid='+proj=utm +zone=32 +datum=WGS84         │ │
+│ │                 +units=m +no_defs',                                      │ │
+│ │                 │   metric_epsg=32632,                                   │ │
+│ │                 │   time_gap_seconds=600,                                │ │
+│ │                 │   max_speed_knots=100.0,                               │ │
+│ │                 │   max_implied_speed_knots=100.0,                       │ │
+│ │                 │   stop_speed_knots=1.0,                                │ │
+│ │                 │   min_stop_seconds=300,                                │ │
+│ │                 │   min_motion_points=3,                                 │ │
+│ │                 │   max_vessel_outlier_pct=0.5,                          │ │
+│ │                 │   study_area_lonlat_bbox=(                             │ │
+│ │                 │   │   -16.1,                                           │ │
+│ │                 │   │   32.88,                                           │ │
+│ │                 │   │   40.18,                                           │ │
+│ │                 │   │   84.17                                            │ │
+│ │                 │   )                                                    │ │
+│ │                 )                                                        │ │
+│ │            ps = '\n        SELECT \n    mmsi, segment_type, vessel_name, │ │
+│ │                 imo, callsign, vessel_type'+357                          │ │
+│ │ region_size_m = 100000.0                                                 │ │
+│ │          root = PosixPath('data/layouts_daily')                          │ │
+│ │            rx = 6                                                        │ │
+│ │            ry = 63                                                       │ │
+│ │  segs_per_box = 16                                                       │ │
+│ │    select_sql = "\n        SELECT\n            bs.mmsi,\n            'in │ │
+│ │                 motion'                    "+2885                        │ │
+│ │         total = 4675671                                                  │ │
+│ │          year = 2026                                                     │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /Users/ngochoapham/Thesis/ver2/packages/pipeline/src/lakehouse_pipeline/layo │
+│ uts.py:567 in _build_cell_daily                                              │
+│                                                                              │
+│   564 │   │   │   continue                                                   │
+│   565 │   │   with _conn_ctx(cell_conn_factory, con) as work:                │
+│   566 │   │   │   register_base_segments_view(work, l0_path)                 │
+│ ❱ 567 │   │   │   rows = _copy_single(work, select_sql=select_sql, target=fi │
+│   568 │   │   total += rows                                                  │
+│   569 │   return total                                                       │
+│   570                                                                        │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │        con = <_duckdb.DuckDBPyConnection object at 0x10932d630>          │ │
+│ │        day = datetime.date(2026, 1, 19)                                  │ │
+│ │   day_cell = PosixPath('data/layouts_daily/L3/day=2026-01-19/region_x=6… │ │
+│ │      final = PosixPath('data/layouts_daily/L3/day=2026-01-19/region_x=6… │ │
+│ │    l0_days = [                                                           │ │
+│ │              │   (                                                       │ │
+│ │              │   │   datetime.date(2026, 1, 1),                          │ │
+│ │              │   │                                                       │ │
+│ │              PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-01.pa… │ │
+│ │              │   ),                                                      │ │
+│ │              │   (                                                       │ │
+│ │              │   │   datetime.date(2026, 1, 2),                          │ │
+│ │              │   │                                                       │ │
+│ │              PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-02.pa… │ │
+│ │              │   ),                                                      │ │
+│ │              │   (                                                       │ │
+│ │              │   │   datetime.date(2026, 1, 3),                          │ │
+│ │              │   │                                                       │ │
+│ │              PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-03.pa… │ │
+│ │              │   ),                                                      │ │
+│ │              │   (                                                       │ │
+│ │              │   │   datetime.date(2026, 1, 4),                          │ │
+│ │              │   │                                                       │ │
+│ │              PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-04.pa… │ │
+│ │              │   ),                                                      │ │
+│ │              │   (                                                       │ │
+│ │              │   │   datetime.date(2026, 1, 5),                          │ │
+│ │              │   │                                                       │ │
+│ │              PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-05.pa… │ │
+│ │              │   ),                                                      │ │
+│ │              │   (                                                       │ │
+│ │              │   │   datetime.date(2026, 1, 6),                          │ │
+│ │              │   │                                                       │ │
+│ │              PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-06.pa… │ │
+│ │              │   ),                                                      │ │
+│ │              │   (                                                       │ │
+│ │              │   │   datetime.date(2026, 1, 7),                          │ │
+│ │              │   │                                                       │ │
+│ │              PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-07.pa… │ │
+│ │              │   ),                                                      │ │
+│ │              │   (                                                       │ │
+│ │              │   │   datetime.date(2026, 1, 8),                          │ │
+│ │              │   │                                                       │ │
+│ │              PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-08.pa… │ │
+│ │              │   ),                                                      │ │
+│ │              │   (                                                       │ │
+│ │              │   │   datetime.date(2026, 1, 9),                          │ │
+│ │              │   │                                                       │ │
+│ │              PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-09.pa… │ │
+│ │              │   ),                                                      │ │
+│ │              │   (                                                       │ │
+│ │              │   │   datetime.date(2026, 1, 10),                         │ │
+│ │              │   │                                                       │ │
+│ │              PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-10.pa… │ │
+│ │              │   ),                                                      │ │
+│ │              │   ... +21                                                 │ │
+│ │              ]                                                           │ │
+│ │    l0_path = PosixPath('data/L0/L0/year=2026/month=01/day=2026-01-19.pa… │ │
+│ │     layout = 'L3'                                                        │ │
+│ │       root = PosixPath('data/layouts_daily')                             │ │
+│ │       rows = 32222                                                       │ │
+│ │         rx = 6                                                           │ │
+│ │         ry = 63                                                          │ │
+│ │ select_sql = "\n        SELECT\n            bs.mmsi,\n            'in    │ │
+│ │              motion'                    "+2885                           │ │
+│ │      total = 566282                                                      │ │
+│ │       work = <_duckdb.DuckDBPyConnection object at 0x109303f70>          │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /Users/ngochoapham/Thesis/ver2/packages/pipeline/src/lakehouse_pipeline/layo │
+│ uts.py:156 in _copy_single                                                   │
+│                                                                              │
+│   153 │   target.parent.mkdir(parents=True, exist_ok=True)                   │
+│   154 │   target.unlink(missing_ok=True)                                     │
+│   155 │   options = ["FORMAT PARQUET", "COMPRESSION ZSTD", kv_metadata_claus │
+│ ❱ 156 │   con.execute(                                                       │
+│   157 │   │   f"""                                                           │
+│   158 │   │   COPY (                                                         │
+│   159 │   │   │   {_wrap_geoparquet(select_sql)}                             │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │        con = <_duckdb.DuckDBPyConnection object at 0x109303f70>          │ │
+│ │    options = [                                                           │ │
+│ │              │   'FORMAT PARQUET',                                       │ │
+│ │              │   'COMPRESSION ZSTD',                                     │ │
+│ │              │   'KV_METADATA { \'geo\':                                 │ │
+│ │              \'{"version":"1.1.0","primary_column":"geometry","columns"… │ │
+│ │              ]                                                           │ │
+│ │ select_sql = "\n        SELECT\n            bs.mmsi,\n            'in    │ │
+│ │              motion'                    "+2885                           │ │
+│ │     target = PosixPath('data/layouts_daily/L3/day=2026-01-19/region_x=6… │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+╰──────────────────────────────────────────────────────────────────────────────╯
+OutOfMemoryException: Out of Memory Error: could not allocate block of size 
+512.0 KiB (12.7 GiB/12.7 GiB used)
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads

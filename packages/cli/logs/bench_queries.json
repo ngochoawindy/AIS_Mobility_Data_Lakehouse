@@ -1,0 +1,154 @@
+[
+  {
+    "query": "with_parquet/temporal",
+    "layout": "L0",
+    "gran": "daily",
+    "n_files": 31,
+    "total_bytes": 3573237721,
+    "columns": [
+      "n_segments",
+      "n_distinct_mmsi"
+    ],
+    "first_row": [
+      1997,
+      1529
+    ],
+    "times_s": [
+      0.0027052500008721836,
+      0.002447374994517304
+    ]
+  },
+  {
+    "query": "with_parquet/temporal",
+    "layout": "L4",
+    "gran": "monthly",
+    "n_files": 24,
+    "total_bytes": 3396918772,
+    "columns": [
+      "n_segments",
+      "n_distinct_mmsi"
+    ],
+    "first_row": [
+      2445,
+      1529
+    ],
+    "times_s": [
+      0.007150332996388897,
+      0.004549375000351574
+    ]
+  },
+  {
+    "query": "with_parquet/temporal",
+    "layout": "L4",
+    "gran": "daily",
+    "n_files": 744,
+    "total_bytes": 3405631042,
+    "columns": [
+      "n_segments",
+      "n_distinct_mmsi"
+    ],
+    "first_row": [
+      2445,
+      1529
+    ],
+    "times_s": [
+      0.05495591699582292,
+      0.06775470799766481
+    ]
+  },
+  {
+    "query": "with_parquet/temporal",
+    "layout": "L4",
+    "gran": "compact",
+    "n_files": 24,
+    "total_bytes": 3396918772,
+    "columns": [
+      "n_segments",
+      "n_distinct_mmsi"
+    ],
+    "first_row": [
+      2445,
+      1529
+    ],
+    "times_s": [
+      0.004434917005710304,
+      0.004250250000040978
+    ]
+  },
+  {
+    "query": "without_parquet/temporal",
+    "layout": "L0",
+    "gran": "daily",
+    "n_files": 31,
+    "total_bytes": 3573237721,
+    "columns": [
+      "n_segments",
+      "n_distinct_mmsi"
+    ],
+    "first_row": [
+      1997,
+      1529
+    ],
+    "times_s": [
+      0.00994604200241156,
+      0.008210041996790096
+    ]
+  },
+  {
+    "query": "without_parquet/temporal",
+    "layout": "L4",
+    "gran": "monthly",
+    "n_files": 24,
+    "total_bytes": 3396918772,
+    "columns": [
+      "n_segments",
+      "n_distinct_mmsi"
+    ],
+    "first_row": [
+      2445,
+      1529
+    ],
+    "times_s": [
+      0.03489554200496059,
+      0.03420891600399045
+    ]
+  },
+  {
+    "query": "without_parquet/temporal",
+    "layout": "L4",
+    "gran": "daily",
+    "n_files": 744,
+    "total_bytes": 3405631042,
+    "columns": [
+      "n_segments",
+      "n_distinct_mmsi"
+    ],
+    "first_row": [
+      2445,
+      1529
+    ],
+    "times_s": [
+      0.07903724999778206,
+      0.07548554200184299
+    ]
+  },
+  {
+    "query": "without_parquet/temporal",
+    "layout": "L4",
+    "gran": "compact",
+    "n_files": 24,
+    "total_bytes": 3396918772,
+    "columns": [
+      "n_segments",
+      "n_distinct_mmsi"
+    ],
+    "first_row": [
+      2445,
+      1529
+    ],
+    "times_s": [
+      0.03348058300616685,
+      0.033578708993445616
+    ]
+  }
+]
