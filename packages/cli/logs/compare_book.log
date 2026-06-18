@@ -1,0 +1,11 @@
+
+=== L0 (base segments, daily) · files_total=31 ===
+  book q57    hour  files dl=62/lh=2 of 31  0.362s vs 0.369s  answers_match=True
+  book q58    hour  files dl=31/lh=1 of 31  0.467s vs 0.462s  answers_match=True
+  book q59    hour  files dl=31/lh=1 of 31  0.352s vs 0.340s  answers_match=True
+  book q510   hour  files dl=31/lh=1 of 31  0.314s vs 0.316s  answers_match=True
+  book q511   hour  files dl=31/lh=1 of 31  0.313s vs 0.320s  answers_match=True
+  book q57    day   files dl=62/lh=4 of 31  0.705s vs 0.741s  answers_match=True
+  book q58    day   files dl=31/lh=2 of 31  0.840s vs 0.866s  answers_match=True
+  book q59    day   files dl=31/lh=2 of 31  0.853s vs 0.907s  answers_match=True
+  book q510   day   files dl=31/lh=2 of 31  0.728s vs 0.776s  answers_match=True
