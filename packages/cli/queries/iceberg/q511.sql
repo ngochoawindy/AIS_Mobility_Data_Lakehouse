@@ -9,6 +9,7 @@ WITH sub AS (
     WHERE xmin <= 654100.0 AND xmax >= 640730.0
       AND ymin <= 6058230.0 AND ymax >= 6042487.0
       AND tmin < getvariable('t1') AND tmax > getvariable('t0')
+      AND dt BETWEEN getvariable('d0') AND getvariable('d1')
 ),
 cand AS (
     SELECT mmsi, trip,

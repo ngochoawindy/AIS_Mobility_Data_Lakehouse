@@ -16,8 +16,8 @@ ATTACH '' AS lake (
 );
 
 -- Expose the chosen layout as `trips`. Swap the layout to compare pruning, e.g.
---   CREATE OR REPLACE VIEW trips AS SELECT * FROM lake.ais.L3_compact;
-CREATE OR REPLACE VIEW trips AS SELECT * FROM lake.ais.L2_compact;
+--   CREATE OR REPLACE VIEW trips AS SELECT * FROM lake.ais.L3s;
+CREATE OR REPLACE VIEW trips AS SELECT * FROM lake.ais.L2s;
 
 -- These are the DAY defaults (so the .sql run standalone); scripts/run_queries.py
 -- overrides them per selectivity. Windows are anchored at 2026-01-15 08:00 

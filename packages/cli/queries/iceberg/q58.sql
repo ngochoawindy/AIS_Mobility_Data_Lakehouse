@@ -10,6 +10,7 @@ cand AS (
     WHERE xmin <= 679171.0 AND xmax >= 666538.0
       AND ymin <= 6403745.0 AND ymax >= 6392057.0
       AND tmin < getvariable('t1') AND tmax > getvariable('t0')
+      AND dt BETWEEN getvariable('d0') AND getvariable('d1')
 )
 SELECT COUNT(DISTINCT mmsi) AS n_vessels
 FROM cand, port
